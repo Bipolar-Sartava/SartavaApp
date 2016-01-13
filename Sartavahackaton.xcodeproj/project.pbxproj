@@ -97,6 +97,7 @@
 		3ED616471C45458400422CDC /* Sartavahackaton */ = {
 			isa = PBXGroup;
 			children = (
+				3ED616761C4546AE00422CDC /* SWRevealSideBar */,
 				3ED616481C45458400422CDC /* AppDelegate.swift */,
 				3ED6164A1C45458400422CDC /* ViewController.swift */,
 				3ED6164C1C45458400422CDC /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				3ED6166A1C45458400422CDC /* Info.plist */,
 			);
 			path = SartavahackatonUITests;
+			sourceTree = "<group>";
+		};
+		3ED616761C4546AE00422CDC /* SWRevealSideBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SWRevealSideBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
