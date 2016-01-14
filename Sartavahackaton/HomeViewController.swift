@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
