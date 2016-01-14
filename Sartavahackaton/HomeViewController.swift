@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
+        
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()
             btnMenu.action = "revealToggle:"
