@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="COl-1q-0Mu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baloons" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-4V-ELZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sartaba_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-4V-ELZ">
                                 <rect key="frame" x="180" y="55" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="nJM-uf-Xp3"/>
@@ -274,7 +274,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מועדפים" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJh-G9-nhJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אהבתי" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJh-G9-nhJ">
                                                     <rect key="frame" x="8" y="8" width="584" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -299,7 +299,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הייתי שם" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq6-mh-4oo">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מפה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq6-mh-4oo">
                                                     <rect key="frame" x="8" y="8" width="584" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -313,6 +313,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="pq6-mh-4oo" secondAttribute="trailing" id="RWG-4o-JZs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hhU-EY-bzG" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="OiG-fK-Yox"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="h8d-vV-JQ6">
                                         <rect key="frame" x="0.0" y="264" width="600" height="44"/>
@@ -473,6 +476,39 @@
             </objects>
             <point key="canvasLocation" x="932" y="2232"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="GA3-In-j9v">
+            <objects>
+                <viewController title="Map" id="9pe-2n-dXc" customClass="MapViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NBc-1H-SgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGb-6a-RaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JgV-SH-QQH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-D5-wA3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-qE-CbM">
+                                <rect key="frame" x="193" y="72" width="215" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xaH-Ak-Pb2">
+                        <barButtonItem key="leftBarButtonItem" title="Open" id="ajx-QK-72c"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnMenu" destination="ajx-QK-72c" id="O6x-5k-7OF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMT-IZ-uW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="3562"/>
+        </scene>
         <!--Favorites-->
         <scene sceneID="bU0-3C-5Kk">
             <objects>
@@ -551,9 +587,27 @@
             </objects>
             <point key="canvasLocation" x="168" y="2899"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UwT-eb-hBd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hhU-EY-bzG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="20V-g4-pCK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pe-2n-dXc" kind="relationship" relationship="rootViewController" id="BJe-ib-xNB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zZ-wJ-sam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="3562"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Baloons" width="1200" height="1200"/>
+        <image name="Sartaba_logo_white" width="984" height="615"/>
         <image name="Tree3" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
