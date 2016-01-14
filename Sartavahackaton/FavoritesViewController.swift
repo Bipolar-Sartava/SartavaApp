@@ -20,6 +20,11 @@ class FavoritesViewController: UIViewController {
             btnMenu.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        //Nav Bar Stuff
+        let navBar = self.navigationController?.navigationBar
+        navBar?.barTintColor = UIColor(red: 121/255, green: 110/255, blue: 220/225, alpha: 1.0)
+        navBar?.tintColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

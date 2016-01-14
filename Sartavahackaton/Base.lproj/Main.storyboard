@@ -49,6 +49,11 @@
                                 <state key="normal" title="התחברות">
                                     <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="rTo-U3-TWb" kind="modal" id="9c4-Zq-gGt"/>
                                 </connections>
@@ -60,6 +65,11 @@
                                 <state key="normal" title="הרשם דרך פייסבוק">
                                     <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-Zg-Ecd">
                                 <rect key="frame" x="200" y="364" width="55" height="30"/>
@@ -439,7 +449,136 @@
                     <view key="view" contentMode="scaleToFill" id="GXC-ry-v7G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="pD1-Kf-CVd">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-tT-1Ia">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.42758315130000002" green="0.88097541840000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G75-Dq-uLQ">
+                                <rect key="frame" x="176" y="387" width="249" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0096537812079999993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="5s6-Di-NyK"/>
+                                    <constraint firstAttribute="height" constant="35" id="StB-7F-wLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="המומלצים">
+                                    <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-nj-ORV">
+                                <rect key="frame" x="176" y="238" width="249" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0096537812079999993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="g4h-Ok-nXQ"/>
+                                    <constraint firstAttribute="width" constant="249" id="wEh-Cd-DvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="קרובים אליי">
+                                    <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <searchBar contentMode="redraw" placeholder="חפש על פי טקסט" translatesAutoresizingMaskIntoConstraints="NO" id="3Mi-pT-MM9">
+                                <rect key="frame" x="176" y="122" width="249" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="6Hn-GC-CnE"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ibb-gm-75y"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKd-iT-7bZ">
+                                <rect key="frame" x="176" y="305" width="249" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0096537812079999993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="g1q-mN-yzh"/>
+                                    <constraint firstAttribute="height" constant="35" id="liN-5W-DxL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="חפש על המפה">
+                                    <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-0I-mE9">
+                                <rect key="frame" x="222" y="476" width="156" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.0096537812079999993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="3i0-fh-yTD"/>
+                                    <constraint firstAttribute="width" constant="249" id="9Kz-LM-rRb"/>
+                                    <constraint firstAttribute="height" constant="62" id="TXF-m0-s5U"/>
+                                    <constraint firstAttribute="height" constant="35" id="yDD-dd-cRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="חפש טיול מאורגן">
+                                    <color key="titleColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Kz-LM-rRb"/>
+                                        <exclude reference="yDD-dd-cRq"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dm-nj-ORV" firstAttribute="centerX" secondItem="3Mi-pT-MM9" secondAttribute="centerX" id="2nx-gK-75L"/>
+                            <constraint firstItem="hKd-iT-7bZ" firstAttribute="top" secondItem="0dm-nj-ORV" secondAttribute="bottom" constant="37" id="BWE-cv-NSV"/>
+                            <constraint firstItem="G75-Dq-uLQ" firstAttribute="height" secondItem="0dm-nj-ORV" secondAttribute="height" id="DG9-rA-WsP"/>
+                            <constraint firstItem="0dm-nj-ORV" firstAttribute="top" secondItem="3Mi-pT-MM9" secondAttribute="bottom" constant="72" id="Ezd-tB-nwL"/>
+                            <constraint firstItem="G75-Dq-uLQ" firstAttribute="top" secondItem="hKd-iT-7bZ" secondAttribute="bottom" constant="37" id="FxA-iG-pO7"/>
+                            <constraint firstItem="G75-Dq-uLQ" firstAttribute="centerX" secondItem="3Mi-pT-MM9" secondAttribute="centerX" id="Rb1-d3-B7H"/>
+                            <constraint firstItem="hKd-iT-7bZ" firstAttribute="height" secondItem="0dm-nj-ORV" secondAttribute="height" id="Sfg-9h-bV6"/>
+                            <constraint firstItem="Lbq-pI-uPr" firstAttribute="top" secondItem="Ppd-tT-1Ia" secondAttribute="bottom" id="WjQ-XQ-WzI"/>
+                            <constraint firstItem="3Mi-pT-MM9" firstAttribute="top" secondItem="Urf-pF-WgB" secondAttribute="bottom" constant="58" id="X52-9H-giQ"/>
+                            <constraint firstItem="pD1-Kf-CVd" firstAttribute="top" secondItem="Urf-pF-WgB" secondAttribute="bottom" id="Xcc-ug-0KI"/>
+                            <constraint firstItem="Lbq-pI-uPr" firstAttribute="top" secondItem="NK6-0I-mE9" secondAttribute="bottom" constant="62" id="YSp-rm-4lX"/>
+                            <constraint firstItem="3Mi-pT-MM9" firstAttribute="centerX" secondItem="GXC-ry-v7G" secondAttribute="centerX" id="d10-kj-Q5D"/>
+                            <constraint firstItem="hKd-iT-7bZ" firstAttribute="centerX" secondItem="3Mi-pT-MM9" secondAttribute="centerX" id="h1w-1d-eUr"/>
+                            <constraint firstItem="hKd-iT-7bZ" firstAttribute="width" secondItem="0dm-nj-ORV" secondAttribute="width" id="hbK-gh-4oc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pD1-Kf-CVd" secondAttribute="trailing" constant="-20" id="ipM-wd-LjK"/>
+                            <constraint firstItem="Ppd-tT-1Ia" firstAttribute="top" secondItem="Urf-pF-WgB" secondAttribute="bottom" id="kpd-Ce-zGb"/>
+                            <constraint firstItem="Lbq-pI-uPr" firstAttribute="top" secondItem="pD1-Kf-CVd" secondAttribute="bottom" id="lAK-CA-KIJ"/>
+                            <constraint firstItem="pD1-Kf-CVd" firstAttribute="leading" secondItem="GXC-ry-v7G" secondAttribute="leadingMargin" constant="-20" id="mkl-2F-Ijq"/>
+                            <constraint firstItem="G75-Dq-uLQ" firstAttribute="width" secondItem="0dm-nj-ORV" secondAttribute="width" id="rbK-Di-45d"/>
+                            <constraint firstItem="NK6-0I-mE9" firstAttribute="centerX" secondItem="GXC-ry-v7G" secondAttribute="centerX" id="sEu-nc-kAm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ppd-tT-1Ia" secondAttribute="trailing" constant="-20" id="uR9-SU-Jnu"/>
+                            <constraint firstItem="Ppd-tT-1Ia" firstAttribute="leading" secondItem="GXC-ry-v7G" secondAttribute="leadingMargin" constant="-20" id="vAe-Ai-YdV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Sfg-9h-bV6"/>
+                                <exclude reference="hbK-gh-4oc"/>
+                                <exclude reference="DG9-rA-WsP"/>
+                                <exclude reference="rbK-Di-45d"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="BIr-yY-Wr6">
                         <barButtonItem key="leftBarButtonItem" title="Open" id="LwF-FT-QH4"/>
