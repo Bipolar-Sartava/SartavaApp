@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
-        
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()
             btnMenu.action = "revealToggle:"
@@ -32,7 +31,7 @@ class HomeViewController: UIViewController {
         
         //Nav Bar Stuff
         let navBar = self.navigationController?.navigationBar
-        navBar?.barTintColor = UIColor(red: 121/255, green: 110/255, blue: 220/225, alpha: 1.0)
+        navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
     }
 
