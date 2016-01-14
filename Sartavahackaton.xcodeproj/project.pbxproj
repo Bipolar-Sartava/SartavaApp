@@ -19,6 +19,11 @@
 		3E74BE391C47E708004B78AB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE381C47E708004B78AB /* libz.tbd */; };
 		3E74BE3B1C47E70E004B78AB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */; };
 		3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */; };
+		3E74BE431C480717004B78AB /* Baloons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE3F1C480716004B78AB /* Baloons.jpg */; };
+		3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE401C480716004B78AB /* Plains 2.jpg */; };
+		3E74BE461C480717004B78AB /* Tree3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE421C480716004B78AB /* Tree3.jpg */; };
+		3E74BE481C480865004B78AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE471C480865004B78AB /* MapViewController.swift */; };
+		3E74BE4A1C481302004B78AB /* Sartaba_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE491C481302004B78AB /* Sartaba_logo_white.png */; };
 		3ED616491C45458400422CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616481C45458400422CDC /* AppDelegate.swift */; };
 		3ED6164B1C45458400422CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6164A1C45458400422CDC /* ViewController.swift */; };
 		3ED6164E1C45458400422CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164C1C45458400422CDC /* Main.storyboard */; };
@@ -62,6 +67,11 @@
 		3E74BE381C47E708004B78AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		3E74BE3F1C480716004B78AB /* Baloons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Baloons.jpg; sourceTree = "<group>"; };
+		3E74BE401C480716004B78AB /* Plains 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Plains 2.jpg"; sourceTree = "<group>"; };
+		3E74BE421C480716004B78AB /* Tree3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tree3.jpg; sourceTree = "<group>"; };
+		3E74BE471C480865004B78AB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3E74BE491C481302004B78AB /* Sartaba_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sartaba_logo_white.png; sourceTree = "<group>"; };
 		3ED616451C45458400422CDC /* Sartavahackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sartavahackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED616481C45458400422CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ED6164A1C45458400422CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +147,17 @@
 			name = Parse;
 			sourceTree = "<group>";
 		};
+		3E74BE3E1C4806F5004B78AB /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				3E74BE491C481302004B78AB /* Sartaba_logo_white.png */,
+				3E74BE3F1C480716004B78AB /* Baloons.jpg */,
+				3E74BE401C480716004B78AB /* Plains 2.jpg */,
+				3E74BE421C480716004B78AB /* Tree3.jpg */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
 		3ED6163C1C45458400422CDC = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +181,7 @@
 		3ED616471C45458400422CDC /* Sartavahackaton */ = {
 			isa = PBXGroup;
 			children = (
+				3E74BE3E1C4806F5004B78AB /* Pictures */,
 				3E74BE251C47E5B0004B78AB /* Parse */,
 				3EEA04E61C46B6EA0057DA32 /* ViewControllers */,
 				3ED616761C4546AE00422CDC /* SWRevealSideBar */,
@@ -208,6 +230,7 @@
 				3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */,
 				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
 				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
+				3E74BE471C480865004B78AB /* MapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -319,8 +342,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E74BE431C480717004B78AB /* Baloons.jpg in Resources */,
+				3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */,
+				3E74BE4A1C481302004B78AB /* Sartaba_logo_white.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
+				3E74BE461C480717004B78AB /* Tree3.jpg in Resources */,
 				3ED6164E1C45458400422CDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +380,7 @@
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
+				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
