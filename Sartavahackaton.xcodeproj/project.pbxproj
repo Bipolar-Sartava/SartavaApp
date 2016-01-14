@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE261C47E5DF004B78AB /* Bolts.framework */; };
+		3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE271C47E5DF004B78AB /* Parse.framework */; };
+		3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */; };
+		3E74BE2D1C47E6E0004B78AB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */; };
+		3E74BE2F1C47E6E8004B78AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */; };
+		3E74BE311C47E6EE004B78AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE301C47E6EE004B78AB /* QuartzCore.framework */; };
+		3E74BE331C47E6F8004B78AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE321C47E6F8004B78AB /* Security.framework */; };
+		3E74BE351C47E6FD004B78AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE341C47E6FD004B78AB /* StoreKit.framework */; };
+		3E74BE371C47E704004B78AB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE361C47E704004B78AB /* SystemConfiguration.framework */; };
+		3E74BE391C47E708004B78AB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE381C47E708004B78AB /* libz.tbd */; };
+		3E74BE3B1C47E70E004B78AB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */; };
+		3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */; };
 		3ED616491C45458400422CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616481C45458400422CDC /* AppDelegate.swift */; };
 		3ED6164B1C45458400422CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6164A1C45458400422CDC /* ViewController.swift */; };
 		3ED6164E1C45458400422CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164C1C45458400422CDC /* Main.storyboard */; };
@@ -38,6 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E74BE301C47E6EE004B78AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3E74BE321C47E6F8004B78AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3E74BE341C47E6FD004B78AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3E74BE361C47E704004B78AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3E74BE381C47E708004B78AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		3ED616451C45458400422CDC /* Sartavahackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sartavahackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED616481C45458400422CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ED6164A1C45458400422CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +88,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E74BE3B1C47E70E004B78AB /* libsqlite3.tbd in Frameworks */,
+				3E74BE391C47E708004B78AB /* libz.tbd in Frameworks */,
+				3E74BE371C47E704004B78AB /* SystemConfiguration.framework in Frameworks */,
+				3E74BE351C47E6FD004B78AB /* StoreKit.framework in Frameworks */,
+				3E74BE331C47E6F8004B78AB /* Security.framework in Frameworks */,
+				3E74BE311C47E6EE004B78AB /* QuartzCore.framework in Frameworks */,
+				3E74BE2F1C47E6E8004B78AB /* CoreGraphics.framework in Frameworks */,
+				3E74BE2D1C47E6E0004B78AB /* CFNetwork.framework in Frameworks */,
+				3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */,
+				3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */,
+				3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +119,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E74BE251C47E5B0004B78AB /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */,
+				3E74BE381C47E708004B78AB /* libz.tbd */,
+				3E74BE361C47E704004B78AB /* SystemConfiguration.framework */,
+				3E74BE341C47E6FD004B78AB /* StoreKit.framework */,
+				3E74BE321C47E6F8004B78AB /* Security.framework */,
+				3E74BE301C47E6EE004B78AB /* QuartzCore.framework */,
+				3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */,
+				3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */,
+				3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */,
+				3E74BE261C47E5DF004B78AB /* Bolts.framework */,
+				3E74BE271C47E5DF004B78AB /* Parse.framework */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
 		3ED6163C1C45458400422CDC = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +160,7 @@
 		3ED616471C45458400422CDC /* Sartavahackaton */ = {
 			isa = PBXGroup;
 			children = (
+				3E74BE251C47E5B0004B78AB /* Parse */,
 				3EEA04E61C46B6EA0057DA32 /* ViewControllers */,
 				3ED616761C4546AE00422CDC /* SWRevealSideBar */,
 				3ED616481C45458400422CDC /* AppDelegate.swift */,
@@ -153,6 +207,7 @@
 				3EEA04E71C46B7280057DA32 /* HomeViewController.swift */,
 				3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */,
 				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
+				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +348,7 @@
 			files = (
 				3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */,
 				3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */,
+				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
 				3ED6164B1C45458400422CDC /* ViewController.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
@@ -439,6 +495,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sartavahackaton",
+				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
@@ -453,6 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sartavahackaton",
+				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
