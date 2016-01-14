@@ -28,6 +28,11 @@ class HomeViewController: UIViewController {
         revealViewController().frontViewShadowOpacity = 1.0
         revealViewController().frontViewShadowColor = UIColor.blackColor()
         revealViewController().toggleAnimationDuration = 0.7
+        
+        //Nav Bar Stuff
+        let navBar = self.navigationController?.navigationBar
+        navBar?.barTintColor = UIColor(red: 121/255, green: 110/255, blue: 220/225, alpha: 1.0)
+        navBar?.tintColor = UIColor.whiteColor()
     }
 
     
