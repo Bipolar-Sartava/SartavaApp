@@ -10,7 +10,10 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var btnMenu: UIBarButtonItem!
+    @IBOutlet weak var btnGroup: UIButton!
+    @IBOutlet weak var btnCreateGroup: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
@@ -18,6 +21,10 @@ class SearchViewController: UIViewController {
             btnMenu.target = self.revealViewController()
             btnMenu.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            //Group Btns Alignment
+            btnGroup.titleLabel?.textAlignment = .Right
+            btnCreateGroup.titleLabel?.textAlignment = .Right
         }
         
         //Nav Bar Stuff

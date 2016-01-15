@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Parse
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class HomeViewController: UIViewController{
 
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
@@ -35,7 +36,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         navBar?.tintColor = UIColor.whiteColor()
     }
 
-    
     
     
     
