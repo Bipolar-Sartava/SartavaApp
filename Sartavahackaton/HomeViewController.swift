@@ -9,8 +9,9 @@
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController{
+class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate{
 
+    @IBOutlet weak var clview: UICollectionView!
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()

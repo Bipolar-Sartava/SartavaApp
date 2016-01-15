@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AttractionPageViewController: UIViewController {
+class CollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
