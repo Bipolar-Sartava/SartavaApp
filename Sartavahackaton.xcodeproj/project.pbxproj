@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250A00611C47FA3A00BA5FD2 /* RegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A00601C47FA3A00BA5FD2 /* RegisterOneViewController.swift */; };
+		254920EE1C4949AD00715CFF /* ManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920EB1C4949AD00715CFF /* ManIcon.png */; };
+		254920EF1C4949AD00715CFF /* QuestionMarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920EC1C4949AD00715CFF /* QuestionMarkIcon.png */; };
+		254920F01C4949AD00715CFF /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920ED1C4949AD00715CFF /* WorkingManIcon.png */; };
+		254920F41C494C3500715CFF /* PrivteManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254920F31C494C3500715CFF /* PrivteManViewController.swift */; };
+		25E684091C483C1400945084 /* RegisterTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E684081C483C1400945084 /* RegisterTwoViewController.swift */; };
 		3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE261C47E5DF004B78AB /* Bolts.framework */; };
 		3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE271C47E5DF004B78AB /* Parse.framework */; };
 		3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */; };
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		250A00601C47FA3A00BA5FD2 /* RegisterOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneViewController.swift; sourceTree = "<group>"; };
+		254920EB1C4949AD00715CFF /* ManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920EC1C4949AD00715CFF /* QuestionMarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkIcon.png; sourceTree = SOURCE_ROOT; };
+		254920ED1C4949AD00715CFF /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920F31C494C3500715CFF /* PrivteManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivteManViewController.swift; sourceTree = "<group>"; };
+		25E684081C483C1400945084 /* RegisterTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoViewController.swift; sourceTree = "<group>"; };
 		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -146,6 +158,7 @@
 				3ED616461C45458400422CDC /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		3ED616461C45458400422CDC /* Products */ = {
 			isa = PBXGroup;
@@ -193,6 +206,9 @@
 		3ED616761C4546AE00422CDC /* SWRevealSideBar */ = {
 			isa = PBXGroup;
 			children = (
+				254920EB1C4949AD00715CFF /* ManIcon.png */,
+				254920EC1C4949AD00715CFF /* QuestionMarkIcon.png */,
+				254920ED1C4949AD00715CFF /* WorkingManIcon.png */,
 				3EEA04E31C46B39D0057DA32 /* SWRevealViewController.h */,
 				3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */,
 				3EEA04E21C46B39B0057DA32 /* Sartavahackaton-Bridging-Header.h */,
@@ -208,6 +224,9 @@
 				3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */,
 				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
 				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
+				250A00601C47FA3A00BA5FD2 /* RegisterOneViewController.swift */,
+				25E684081C483C1400945084 /* RegisterTwoViewController.swift */,
+				254920F31C494C3500715CFF /* PrivteManViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -280,7 +299,7 @@
 				TargetAttributes = {
 					3ED616441C45458400422CDC = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 73QN96ZXDN;
+						DevelopmentTeam = JNA959AHX7;
 					};
 					3ED616581C45458400422CDC = {
 						CreatedOnToolsVersion = 7.2;
@@ -319,7 +338,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254920EE1C4949AD00715CFF /* ManIcon.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
+				254920F01C4949AD00715CFF /* WorkingManIcon.png in Resources */,
+				254920EF1C4949AD00715CFF /* QuestionMarkIcon.png in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
 				3ED6164E1C45458400422CDC /* Main.storyboard in Resources */,
 			);
@@ -346,12 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250A00611C47FA3A00BA5FD2 /* RegisterOneViewController.swift in Sources */,
 				3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */,
 				3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */,
+				254920F41C494C3500715CFF /* PrivteManViewController.swift in Sources */,
 				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
 				3ED6164B1C45458400422CDC /* ViewController.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
+				25E684091C483C1400945084 /* RegisterTwoViewController.swift in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,16 +520,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sartavahackaton",
 				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -513,15 +543,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sartavahackaton",
 				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
