@@ -9,10 +9,11 @@
 import UIKit
 
 class CollectionViewController: UIViewController {
-
+    @IBOutlet weak var img: UIImageView!
+    var image = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    self.img.image = self.image
         // Do any additional setup after loading the view.
     }
 
