@@ -33,7 +33,19 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         self.performSegueWithIdentifier("ShowInfo", sender: self)
     }
     
-    
+    //Show Image on the collectionviewcontroller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowInfo"
+        {
+            let indexPaths = self.clview!.indexPathsForSelectedItems()!
+            let indexPath = indexPaths[0] as NSIndexPath
+            
+            let vc = segue.destinationViewController as! CollectionViewController
+            
+            vc.image = self.images[indexPath.row]!
+            vc.title = self.imageLable[indexPath.row]
+        }
+    }
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
