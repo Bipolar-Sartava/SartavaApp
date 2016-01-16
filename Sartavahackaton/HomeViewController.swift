@@ -11,7 +11,29 @@ import Parse
 
 class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate{
 
+    //collection view protocols length
+    let imageLable = ["Attraction1","Attraction2","Attraction3"]
+    let images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
     @IBOutlet weak var clview: UICollectionView!
+    
+    //Writing protocols
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.imageLable.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = clview.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! Cell
+        cell.img.image = self.images[indexPath.row]
+        cell.lblT.text = self.imageLable[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("ShowInfo", sender: self)
+    }
+    
+    
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
