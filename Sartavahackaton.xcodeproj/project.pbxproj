@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006211C4A89D600F66A02 /* EyeIcon.png */; };
+		25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006221C4A89D600F66A02 /* UsuallyManIcon.png */; };
+		25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006231C4A89D600F66A02 /* WorkingManIcon.png */; };
 		3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE261C47E5DF004B78AB /* Bolts.framework */; };
 		3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE271C47E5DF004B78AB /* Parse.framework */; };
 		3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25D006211C4A89D600F66A02 /* EyeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EyeIcon.png; sourceTree = SOURCE_ROOT; };
+		25D006221C4A89D600F66A02 /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
+		25D006231C4A89D600F66A02 /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
 		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -154,6 +160,9 @@
 		3E74BE3E1C4806F5004B78AB /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				25D006211C4A89D600F66A02 /* EyeIcon.png */,
+				25D006221C4A89D600F66A02 /* UsuallyManIcon.png */,
+				25D006231C4A89D600F66A02 /* WorkingManIcon.png */,
 				3E74BE491C481302004B78AB /* Sartaba_logo_white.png */,
 				3E74BE3F1C480716004B78AB /* Baloons.jpg */,
 				3E74BE401C480716004B78AB /* Plains 2.jpg */,
@@ -350,9 +359,12 @@
 			files = (
 				3E74BE431C480717004B78AB /* Baloons.jpg in Resources */,
 				3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */,
+				25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */,
+				25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */,
 				3E74BE4A1C481302004B78AB /* Sartaba_logo_white.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
+				25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */,
 				3E74BE461C480717004B78AB /* Tree3.jpg in Resources */,
 				3ED6164E1C45458400422CDC /* Main.storyboard in Resources */,
 			);
