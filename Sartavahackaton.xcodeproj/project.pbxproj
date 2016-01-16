@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B270521C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */; };
+		25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */; };
+		25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */; };
+		25B270581C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */; };
+		25B2705A1C4A99E6001839B1 /* CheckMarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B270591C4A99E6001839B1 /* CheckMarkIcon.png */; };
 		25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006211C4A89D600F66A02 /* EyeIcon.png */; };
 		25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006221C4A89D600F66A02 /* UsuallyManIcon.png */; };
 		25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006231C4A89D600F66A02 /* WorkingManIcon.png */; };
@@ -60,6 +65,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToUsuallyPeopleViewController.swift; sourceTree = "<group>"; };
+		25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToWorkingManViewController.swift; sourceTree = "<group>"; };
+		25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneToWorkingManViewController.swift; sourceTree = "<group>"; };
+		25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseWorkingManOrUsuallyManViewController.swift; sourceTree = "<group>"; };
+		25B270591C4A99E6001839B1 /* CheckMarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMarkIcon.png; sourceTree = SOURCE_ROOT; };
 		25D006211C4A89D600F66A02 /* EyeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EyeIcon.png; sourceTree = SOURCE_ROOT; };
 		25D006221C4A89D600F66A02 /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
 		25D006231C4A89D600F66A02 /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
@@ -160,6 +170,7 @@
 		3E74BE3E1C4806F5004B78AB /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				25B270591C4A99E6001839B1 /* CheckMarkIcon.png */,
 				25D006211C4A89D600F66A02 /* EyeIcon.png */,
 				25D006221C4A89D600F66A02 /* UsuallyManIcon.png */,
 				25D006231C4A89D600F66A02 /* WorkingManIcon.png */,
@@ -246,6 +257,10 @@
 				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
 				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
 				3E74BE471C480865004B78AB /* MapViewController.swift */,
+				25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */,
+				25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */,
+				25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */,
+				25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -361,6 +376,7 @@
 				3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */,
 				25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */,
 				25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */,
+				25B2705A1C4A99E6001839B1 /* CheckMarkIcon.png in Resources */,
 				3E74BE4A1C481302004B78AB /* Sartaba_logo_white.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
@@ -392,8 +408,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */,
+				25B270521C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift in Sources */,
 				3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */,
 				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
+				25B270581C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift in Sources */,
+				25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */,
+				25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */,
 				3ED6164B1C45458400422CDC /* ViewController.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
