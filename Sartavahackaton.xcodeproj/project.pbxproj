@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254920F71C495DAD00715CFF /* UsuallyManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920F51C495DAD00715CFF /* UsuallyManIcon.png */; };
+		254920F81C495DAD00715CFF /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920F61C495DAD00715CFF /* WorkingManIcon.png */; };
+		254920FB1C495DC700715CFF /* UsuallyManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920F91C495DC700715CFF /* UsuallyManIcon.png */; };
+		254920FC1C495DC700715CFF /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920FA1C495DC700715CFF /* WorkingManIcon.png */; };
+		254920FE1C49605000715CFF /* RegisterTwoUsuallyManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254920FD1C49605000715CFF /* RegisterTwoUsuallyManViewController.swift */; };
+		254921001C49678100715CFF /* EyeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 254920FF1C49678100715CFF /* EyeIcon.png */; };
+		254921021C4968A700715CFF /* RegisterOneForWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254921011C4968A700715CFF /* RegisterOneForWorkingManViewController.swift */; };
+		254921041C4968D200715CFF /* RegisterTwoToWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254921031C4968D200715CFF /* RegisterTwoToWorkingManViewController.swift */; };
 		3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE261C47E5DF004B78AB /* Bolts.framework */; };
 		3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE271C47E5DF004B78AB /* Parse.framework */; };
 		3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */; };
@@ -57,6 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254920F51C495DAD00715CFF /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920F61C495DAD00715CFF /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920F91C495DC700715CFF /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920FA1C495DC700715CFF /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
+		254920FD1C49605000715CFF /* RegisterTwoUsuallyManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoUsuallyManViewController.swift; sourceTree = "<group>"; };
+		254920FF1C49678100715CFF /* EyeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EyeIcon.png; sourceTree = SOURCE_ROOT; };
+		254921011C4968A700715CFF /* RegisterOneForWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneForWorkingManViewController.swift; sourceTree = "<group>"; };
+		254921031C4968D200715CFF /* RegisterTwoToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToWorkingManViewController.swift; sourceTree = "<group>"; };
 		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -155,6 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				3E74BE491C481302004B78AB /* Sartaba_logo_white.png */,
+				254920F91C495DC700715CFF /* UsuallyManIcon.png */,
+				254920FF1C49678100715CFF /* EyeIcon.png */,
+				254920FA1C495DC700715CFF /* WorkingManIcon.png */,
 				3E74BE3F1C480716004B78AB /* Baloons.jpg */,
 				3E74BE401C480716004B78AB /* Plains 2.jpg */,
 				3E74BE421C480716004B78AB /* Tree3.jpg */,
@@ -219,6 +238,8 @@
 		3ED616761C4546AE00422CDC /* SWRevealSideBar */ = {
 			isa = PBXGroup;
 			children = (
+				254920F51C495DAD00715CFF /* UsuallyManIcon.png */,
+				254920F61C495DAD00715CFF /* WorkingManIcon.png */,
 				3EEA04E31C46B39D0057DA32 /* SWRevealViewController.h */,
 				3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */,
 				3EEA04E21C46B39B0057DA32 /* Sartavahackaton-Bridging-Header.h */,
@@ -237,6 +258,9 @@
 				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
 				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
 				3E74BE471C480865004B78AB /* MapViewController.swift */,
+				254920FD1C49605000715CFF /* RegisterTwoUsuallyManViewController.swift */,
+				254921011C4968A700715CFF /* RegisterOneForWorkingManViewController.swift */,
+				254921031C4968D200715CFF /* RegisterTwoToWorkingManViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -349,7 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E74BE431C480717004B78AB /* Baloons.jpg in Resources */,
+				254920FC1C495DC700715CFF /* WorkingManIcon.png in Resources */,
+				254921001C49678100715CFF /* EyeIcon.png in Resources */,
+				254920F71C495DAD00715CFF /* UsuallyManIcon.png in Resources */,
 				3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */,
+				254920FB1C495DC700715CFF /* UsuallyManIcon.png in Resources */,
+				254920F81C495DAD00715CFF /* WorkingManIcon.png in Resources */,
 				3E74BE4A1C481302004B78AB /* Sartaba_logo_white.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
@@ -380,13 +409,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				709D6FE61C484E500095F47B /* CollectionViewCell.swift in Sources */,
+				254921041C4968D200715CFF /* RegisterTwoToWorkingManViewController.swift in Sources */,
 				3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */,
 				3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */,
 				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
 				3ED6164B1C45458400422CDC /* ViewController.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
+				254920FE1C49605000715CFF /* RegisterTwoUsuallyManViewController.swift in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
+				254921021C4968A700715CFF /* RegisterOneForWorkingManViewController.swift in Sources */,
 				709D6FE21C484D4C0095F47B /* AttractionPageViewController.swift in Sources */,
 				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,
 			);
