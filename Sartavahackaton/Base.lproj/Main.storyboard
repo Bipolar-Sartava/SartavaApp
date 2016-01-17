@@ -148,7 +148,7 @@
         <!--Register One To Working Man View Controller-->
         <scene sceneID="sqR-34-Agq">
             <objects>
-                <viewController id="skg-uI-cPe" customClass="RegisterOneToWorkingManViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bussinesSignUpVc" id="skg-uI-cPe" customClass="RegisterOneToWorkingManViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z7b-nX-9jm"/>
                         <viewControllerLayoutGuide type="bottom" id="hx3-9G-vcg"/>
@@ -288,6 +288,9 @@
                                 <state key="normal" title="הרשמה">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xOD-Vo-yVW" kind="modal" id="xes-gf-NJg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8F-b8-bgs">
                                 <rect key="frame" x="306" y="364" width="97" height="33"/>
@@ -548,7 +551,7 @@
         <!--RegisterOne-->
         <scene sceneID="p0o-sF-WL9">
             <objects>
-                <viewController title="RegisterOne" id="gvu-29-vwM" customClass="RegisterOneUsualyViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="normalSignUpVc" title="RegisterOne" id="gvu-29-vwM" customClass="RegisterOneUsualyViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iG7-tg-WgU"/>
                         <viewControllerLayoutGuide type="bottom" id="AiQ-cr-8aj"/>
@@ -557,6 +560,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8f-mZ-2Lv">
+                                <rect key="frame" x="0.0" y="568" width="600" height="32"/>
+                                <color key="backgroundColor" red="0.14721597867773739" green="0.34613279823431464" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="IRN-Ta-ULH"/>
+                                    <constraint firstAttribute="height" constant="32" id="LlV-7s-xvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UsuallyManIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-SM-hkv">
                                 <rect key="frame" x="225" y="102" width="151" height="128"/>
                             </imageView>
@@ -597,29 +611,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8f-mZ-2Lv">
-                                <rect key="frame" x="0.0" y="568" width="600" height="32"/>
-                                <color key="backgroundColor" red="0.14721597867773739" green="0.34613279823431464" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="IRN-Ta-ULH"/>
-                                    <constraint firstAttribute="height" constant="32" id="LlV-7s-xvB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDS-ml-zDd">
-                                <rect key="frame" x="288" y="568" width="44" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="hXy-JF-HGN"/>
-                                    <constraint firstAttribute="height" constant="30" id="lgD-uw-fFb"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="CheckMarkIcon.png"/>
-                                <connections>
-                                    <action selector="btnContinue:" destination="gvu-29-vwM" eventType="touchUpInside" id="zOV-Bk-V0e"/>
-                                    <segue destination="6sT-NW-iWI" kind="push" id="XmE-0V-U4z"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="שם פרטי ומשפחה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80R-vZ-Tob">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
                                 <color key="backgroundColor" red="0.1472159787" green="0.34613279819999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -630,11 +621,22 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xl-1H-Ueg">
                                 <rect key="frame" x="20" y="40" width="560" height="2"/>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQm-ee-FTt">
+                                <rect key="frame" x="278" y="569" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bFZ-1s-ITp"/>
+                                    <constraint firstAttribute="width" constant="44" id="eZX-7d-Cgd"/>
+                                </constraints>
+                                <state key="normal" image="CheckMarkIcon.png"/>
+                                <connections>
+                                    <action selector="btnContinue:" destination="gvu-29-vwM" eventType="touchUpInside" id="id0-Lw-cNt"/>
+                                    <segue destination="6sT-NW-iWI" kind="modal" id="Ke9-aF-Gbq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SSm-Ic-eT3" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="0W9-rg-Ugw"/>
-                            <constraint firstItem="AiQ-cr-8aj" firstAttribute="top" secondItem="TDS-ml-zDd" secondAttribute="bottom" constant="2" id="0yB-xM-BZl"/>
                             <constraint firstItem="c12-ue-dW2" firstAttribute="top" secondItem="hcw-JP-Xas" secondAttribute="bottom" constant="62" id="4Af-gf-2vx"/>
                             <constraint firstItem="c12-ue-dW2" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="6Q5-Qg-kt1"/>
                             <constraint firstItem="3xl-1H-Ueg" firstAttribute="trailing" secondItem="j2x-gw-xHh" secondAttribute="trailingMargin" id="7h2-ZH-QWg"/>
@@ -643,11 +645,11 @@
                             <constraint firstItem="m8f-mZ-2Lv" firstAttribute="leading" secondItem="j2x-gw-xHh" secondAttribute="leadingMargin" constant="-20" id="9jK-EN-yM1"/>
                             <constraint firstItem="m8f-mZ-2Lv" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="AHR-nj-Zff"/>
                             <constraint firstItem="80R-vZ-Tob" firstAttribute="leading" secondItem="j2x-gw-xHh" secondAttribute="leadingMargin" constant="-20" id="F4d-Bx-NBl"/>
-                            <constraint firstItem="TDS-ml-zDd" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="KMZ-7y-rYm"/>
                             <constraint firstItem="80R-vZ-Tob" firstAttribute="top" secondItem="j2x-gw-xHh" secondAttribute="topMargin" id="KuB-0Z-K1u"/>
                             <constraint firstItem="AgD-SM-hkv" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="NcJ-4m-Tnz"/>
                             <constraint firstItem="pEm-gl-MJc" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="SS6-k2-T87"/>
                             <constraint firstItem="ggX-XP-EiE" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="Tsx-Kk-XDg"/>
+                            <constraint firstItem="MQm-ee-FTt" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="TzT-jm-PvW"/>
                             <constraint firstItem="hcw-JP-Xas" firstAttribute="centerX" secondItem="j2x-gw-xHh" secondAttribute="centerX" id="VaK-nf-Lvm"/>
                             <constraint firstItem="pEm-gl-MJc" firstAttribute="top" secondItem="c12-ue-dW2" secondAttribute="bottom" constant="35" id="YcF-FR-RRp"/>
                             <constraint firstItem="hcw-JP-Xas" firstAttribute="top" secondItem="AgD-SM-hkv" secondAttribute="bottom" constant="3" id="acU-6k-ogf"/>
@@ -658,6 +660,7 @@
                             <constraint firstItem="AiQ-cr-8aj" firstAttribute="top" secondItem="m8f-mZ-2Lv" secondAttribute="bottom" id="sym-ee-Kda"/>
                             <constraint firstItem="AiQ-cr-8aj" firstAttribute="top" secondItem="m8f-mZ-2Lv" secondAttribute="bottom" id="vpN-0T-2Ac"/>
                             <constraint firstItem="SSm-Ic-eT3" firstAttribute="top" secondItem="c12-ue-dW2" secondAttribute="bottom" constant="64" id="wYQ-wN-LnE"/>
+                            <constraint firstItem="AiQ-cr-8aj" firstAttribute="top" secondItem="MQm-ee-FTt" secondAttribute="bottom" constant="1" id="xWE-qY-I32"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1433,7 +1436,7 @@
         <!--ChoseRegister-->
         <scene sceneID="cQq-CN-5uJ">
             <objects>
-                <viewController title="ChoseRegister" id="xOD-Vo-yVW" sceneMemberID="viewController">
+                <viewController title="ChoseRegister" id="xOD-Vo-yVW" customClass="ChooseWorkingManOrUsuallyManViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FJ0-87-yeN"/>
                         <viewControllerLayoutGuide type="bottom" id="kdt-4H-QWk"/>
@@ -1475,6 +1478,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="ocn-tu-Fts"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="CheckMarkIcon.png"/>
+                                <connections>
+                                    <action selector="btnContinue:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="Szb-gw-IvC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMH-Ge-Dy4">
                                 <rect key="frame" x="217" y="90" width="383" height="39"/>
@@ -1482,6 +1488,9 @@
                                 <state key="normal" title="  משתמש בעל עסק">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="bussinesBtnClicked:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="Z8Y-rw-QzK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKX-a7-XV5">
                                 <rect key="frame" x="217" y="171" width="383" height="39"/>
@@ -1489,6 +1498,9 @@
                                 <state key="normal" title="משתמש תיירותי">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="userBtnClicked:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="gM3-Pe-h70"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTo-l7-QcE">
                                 <rect key="frame" x="40" y="138" width="525" height="1"/>
@@ -1520,6 +1532,9 @@
                                         <exclude reference="dAH-UJ-ltt"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnBussinesInfo:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="ksn-sA-tJ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-ri-ntr">
                                 <rect key="frame" x="31" y="181" width="20" height="20"/>
@@ -1538,6 +1553,9 @@
                                         <exclude reference="Hfi-bC-dl9"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnNormalInfo:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="5uB-VM-DhX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1587,6 +1605,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Zai-Fn-Izl"/>
+                    <connections>
+                        <outlet property="OutletBussinesInfo" destination="S8E-WL-hda" id="7wc-nW-L2A"/>
+                        <outlet property="OutletNormalInfo" destination="AKD-ri-ntr" id="Wp4-s6-dwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogG-7P-lTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

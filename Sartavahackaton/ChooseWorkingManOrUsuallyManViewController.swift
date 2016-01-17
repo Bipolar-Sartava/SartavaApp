@@ -2,34 +2,94 @@
 //  ChooseWorkingManOrUsuallyManViewController.swift
 //  Sartavahackaton
 //
-//  Created by erez block on 1/16/16.
-//  Copyright © 2016 B-Up!. All rights reserved.
+//  Created by Ori Mizrachi on 1/16/16.
+//  Copyright © 2016 Bipolar!. All rights reserved.
 //
 
 import UIKit
 
 class ChooseWorkingManOrUsuallyManViewController: UIViewController {
 
+    @IBOutlet weak var OutletBussinesInfo: UIButton!
+    @IBOutlet weak var OutletNormalInfo: UIButton!
+    
+    var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    var isHighLighted: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnBussinesInfo(sender: AnyObject) {
+        let ivBussinesinfo = UIImage(named: "ArrowDown.png")
+        OutletBussinesInfo.setImage(ivBussinesinfo, forState: .Normal)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnNormalInfo(sender: AnyObject) {
+        let ivNormalInfo = UIImage(named: "ArrowDown.png")
+        OutletNormalInfo.setImage(ivNormalInfo, forState: .Normal)
     }
-    */
+    @IBAction func btnContinue(sender: UIButton) {
+        
+        if d.objectForKey("isBussines") as! Bool == true {
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let vc: UIViewController = story.instantiateViewControllerWithIdentifier("bussinesSignUpVc") as UIViewController
+            
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
+        
+        else if d.objectForKey("isBussines") as! Bool == false {
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let vc: UIViewController = story.instantiateViewControllerWithIdentifier("normalSignUpVc") as UIViewController
+            
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
+        
+        else {
+            let alert = UIAlertController(title: "Error", message: "You Have to choose the Track You want", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        }
+    }
+    
+    
+    @IBAction func bussinesBtnClicked(sender: UIButton) {
+        //Highlight Button
+        dispatch_async(dispatch_get_main_queue(), {
+
+        if self.isHighLighted == false {
+            sender.highlighted = true
+            self.isHighLighted = true
+        }
+            
+        else {
+                sender.highlighted = false
+                self.isHighLighted = false
+            }
+        })
+        
+        //Save User Choice
+        d.setObject(true, forKey: "isBussines")
+    }
+    
+    @IBAction func userBtnClicked(sender: UIButton) {
+        //Highlight Button
+        dispatch_async(dispatch_get_main_queue(), {
+            
+            if self.isHighLighted == false {
+                sender.highlighted = true
+                self.isHighLighted = true
+            }
+                
+            else {
+                sender.highlighted = false
+                self.isHighLighted = false
+            }
+        })
+        
+        //Save User Choice
+        d.setObject(false, forKey: "isBussines")
+    }
 
 }
