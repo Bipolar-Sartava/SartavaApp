@@ -33,6 +33,9 @@
 		3E74BE481C480865004B78AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE471C480865004B78AB /* MapViewController.swift */; };
 		3E8FCBF81C4AD3E700712573 /* Menu_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FCBF61C4AD3E700712573 /* Menu_white.png */; };
 		3E8FCBF91C4AD3E700712573 /* Sartaba_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */; };
+		3ECB41431C4C150600F6E4F9 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41411C4C150500F6E4F9 /* Arrow.png */; };
+		3ECB41441C4C150600F6E4F9 /* ArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41421C4C150600F6E4F9 /* ArrowDown.png */; };
+		3ECB41461C4C20B000F6E4F9 /* ShukBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */; };
 		3ED616491C45458400422CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616481C45458400422CDC /* AppDelegate.swift */; };
 		3ED6164B1C45458400422CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6164A1C45458400422CDC /* ViewController.swift */; };
 		3ED6164E1C45458400422CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164C1C45458400422CDC /* Main.storyboard */; };
@@ -95,6 +98,9 @@
 		3E74BE471C480865004B78AB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3E8FCBF61C4AD3E700712573 /* Menu_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_white.png; sourceTree = "<group>"; };
 		3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sartaba_logo_white.png; sourceTree = "<group>"; };
+		3ECB41411C4C150500F6E4F9 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		3ECB41421C4C150600F6E4F9 /* ArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowDown.png; sourceTree = "<group>"; };
+		3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShukBlur.png; sourceTree = "<group>"; };
 		3ED616451C45458400422CDC /* Sartavahackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sartavahackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED616481C45458400422CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ED6164A1C45458400422CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +188,9 @@
 		3E74BE3E1C4806F5004B78AB /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */,
+				3ECB41411C4C150500F6E4F9 /* Arrow.png */,
+				3ECB41421C4C150600F6E4F9 /* ArrowDown.png */,
 				3E8FCBF61C4AD3E700712573 /* Menu_white.png */,
 				3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */,
 				25B270591C4A99E6001839B1 /* CheckMarkIcon.png */,
@@ -394,10 +403,13 @@
 				25B2705A1C4A99E6001839B1 /* CheckMarkIcon.png in Resources */,
 				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
 				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
+				3ECB41461C4C20B000F6E4F9 /* ShukBlur.png in Resources */,
 				25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */,
+				3ECB41431C4C150600F6E4F9 /* Arrow.png in Resources */,
 				3E74BE461C480717004B78AB /* Tree3.jpg in Resources */,
 				3ED6164E1C45458400422CDC /* Main.storyboard in Resources */,
 				3E8FCBF81C4AD3E700712573 /* Menu_white.png in Resources */,
+				3ECB41441C4C150600F6E4F9 /* ArrowDown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
