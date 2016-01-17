@@ -11,6 +11,18 @@ import Parse
 
 class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate{
 
+    @IBAction func TripsBtn(sender: AnyObject)
+    {
+
+    }
+    @IBAction func HotelsBtn(sender: AnyObject)
+    {
+        
+    }
+    @IBAction func AttractionsBtn(sender: AnyObject)
+    {
+        
+    }
     //collection view protocols length
     let imageLable = ["Attraction1","Attraction2","Attraction3"]
     let images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
@@ -50,6 +62,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Menu Btn Stuff
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()
