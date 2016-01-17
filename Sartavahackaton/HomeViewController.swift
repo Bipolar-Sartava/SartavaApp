@@ -15,6 +15,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
     let imageLable = ["Attraction1","Attraction2","Attraction3"]
     let images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
     @IBOutlet weak var clview: UICollectionView!
+
     
     //Writing protocols
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

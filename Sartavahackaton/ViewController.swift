@@ -12,13 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let alert = UIAlertView(title: "Hello", message: "Heelo", delegate: self, cancelButtonTitle: "OK")
+        
+        self.view.addSubview(alert)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //hide status bar
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true
     }
+    
 
 
 }
