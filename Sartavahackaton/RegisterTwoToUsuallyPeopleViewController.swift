@@ -39,21 +39,29 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
         user.setObject(d.objectForKey("fName")!, forKey: "fName")
         user.setObject(d.objectForKey("lname")!, forKey: "lName")
         
-        //sign up the user
-        user.signUpInBackgroundWithBlock({ (success: Bool, error: NSError?) -> Void in
-            
-            //If Signed Up Succsesfully
-            if error == nil {
-                let alert = UIAlertController(title: "Signed Up!", message: "You Have successfully Signed Up!", preferredStyle: UIAlertControllerStyle.Alert)
+        if passTF.text != secondPassTF.text {
+                let alert = UIAlertController(title: "Error", message: "Your passwords does not match", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
-            }
-            //If there is an error with sign up
-            else {
-                print(error)
-            }
-        })
+        }
         
+        else {
+            //sign up the user
+            user.signUpInBackgroundWithBlock({ (success: Bool, error: NSError?) -> Void in
+            
+                //If Signed Up Succsesfully
+                if error == nil {
+                    let alert = UIAlertController(title: "Signed Up!", message: "You Have successfully Signed Up!", preferredStyle:     UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
+                //If there is an error with sign up
+                else {
+                    print(error)
+                }
+            })
+        
+        }
     }
     
     @IBAction func showPassBtn(sender: AnyObject) {

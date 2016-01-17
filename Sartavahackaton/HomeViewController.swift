@@ -69,6 +69,14 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
+        
+        //blur effect
+//        var blur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+//        var blurView = UIVisualEffectView(effect: blur)
+//        blurView.frame = view.bounds
+//        blurView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+//        view.addSubview(blurView)
+        
     }
 
     
