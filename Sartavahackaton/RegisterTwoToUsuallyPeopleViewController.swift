@@ -16,15 +16,19 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var secondPassTF: UITextField!
     
+    var showPass: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
     
-    
-    func LogIn() {
+    func goToLogin() {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let vc: UIViewController = story.instantiateViewControllerWithIdentifier("login") as UIViewController
         
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func SignUp() {
@@ -58,18 +62,24 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
                 }
                 //If there is an error with sign up
                 else {
-                    print(error)
-                    let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle:     UIAlertControllerStyle.Alert)
+                    let userError: NSString = (error?.localizedDescription)!
+                    let alert = UIAlertController(title: "Error", message: "\(userError)", preferredStyle:     UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                 }
             })
-        
         }
     }
     
     @IBAction func showPassBtn(sender: AnyObject) {
-        passTF.secureTextEntry = false
+        showPass = !showPass
+        if showPass == true {
+            passTF.secureTextEntry = false
+        }
+        
+        else if showPass == false {
+            passTF.secureTextEntry = true
+        }
     }
     @IBAction func btnCountinue(sender: AnyObject) {
         self.SignUp()
