@@ -37,7 +37,6 @@
 		3ECB41441C4C150600F6E4F9 /* ArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41421C4C150600F6E4F9 /* ArrowDown.png */; };
 		3ECB41461C4C20B000F6E4F9 /* ShukBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */; };
 		3ED616491C45458400422CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616481C45458400422CDC /* AppDelegate.swift */; };
-		3ED6164B1C45458400422CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6164A1C45458400422CDC /* ViewController.swift */; };
 		3ED6164E1C45458400422CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164C1C45458400422CDC /* Main.storyboard */; };
 		3ED616501C45458400422CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164F1C45458400422CDC /* Assets.xcassets */; };
 		3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED616511C45458400422CDC /* LaunchScreen.storyboard */; };
@@ -47,6 +46,7 @@
 		3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E71C46B7280057DA32 /* HomeViewController.swift */; };
 		3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */; };
 		3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */; };
+		3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7A73F1C4D400400012326 /* LoginViewController.swift */; };
 		3EFA28E51C4ABBE6007BA729 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E41C4ABBE6007BA729 /* Accounts.framework */; };
 		3EFA28E71C4ABBED007BA729 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E61C4ABBED007BA729 /* Social.framework */; };
 		3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */; };
@@ -103,7 +103,6 @@
 		3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShukBlur.png; sourceTree = "<group>"; };
 		3ED616451C45458400422CDC /* Sartavahackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sartavahackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED616481C45458400422CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ED6164A1C45458400422CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3ED6164D1C45458400422CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ED6164F1C45458400422CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED616521C45458400422CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		3EEA04E71C46B7280057DA32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		3EF7A73F1C4D400400012326 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EFA28E41C4ABBE6007BA729 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3EFA28E61C4ABBED007BA729 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneUsualyViewController.swift; sourceTree = "<group>"; };
@@ -271,7 +271,6 @@
 		3EEA04E61C46B6EA0057DA32 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3ED6164A1C45458400422CDC /* ViewController.swift */,
 				3EEA04E71C46B7280057DA32 /* HomeViewController.swift */,
 				709D6FE11C484D4C0095F47B /* CollectionViewController.swift */,
 				705EA1371C49B9850043C504 /* Cell.swift */,
@@ -284,6 +283,7 @@
 				25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */,
 				25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */,
 				3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */,
+				3EF7A73F1C4D400400012326 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -442,10 +442,10 @@
 				25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */,
 				3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */,
 				25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */,
-				3ED6164B1C45458400422CDC /* ViewController.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
+				3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */,
 				705EA1381C49B9850043C504 /* Cell.swift in Sources */,
 				709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */,
 				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,
