@@ -15,11 +15,11 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
     
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     var isHighLighted: Bool = false
+    var counter: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func btnBussinesInfo(sender: AnyObject) {
@@ -33,11 +33,11 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
     }
     @IBAction func btnContinue(sender: UIButton) {
         
-        if d.objectForKey("isBussines") as! Bool == true {
-            let story = UIStoryboard(name: "Main", bundle: nil)
-            let vc: UIViewController = story.instantiateViewControllerWithIdentifier("bussinesSignUpVc") as UIViewController
+        if isHighLighted == false {
+            let alert = UIAlertController(title: "Error", message: "You Have to choose the Track u want to Sign Up to", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             
-            self.presentViewController(vc, animated: true, completion: nil)
+            self.presentViewController(alert, animated: true, completion: nil)
         }
         
         else if d.objectForKey("isBussines") as! Bool == false {
@@ -46,14 +46,16 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
             
             self.presentViewController(vc, animated: true, completion: nil)
         }
-        
-        else {
-            let alert = UIAlertController(title: "Error", message: "You Have to choose the Track You want", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        }
+    
+        else if d.objectForKey("isBussines") as! Bool == true {
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let vc: UIViewController = story.instantiateViewControllerWithIdentifier("bussinesSignUpVc") as UIViewController
+    
+                self.presentViewController(vc, animated: true, completion: nil)
+            }
     }
-    
-    
+
+
     @IBAction func bussinesBtnClicked(sender: UIButton) {
         //Highlight Button
         dispatch_async(dispatch_get_main_queue(), {
@@ -71,6 +73,7 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
         
         //Save User Choice
         d.setObject(true, forKey: "isBussines")
+
     }
     
     @IBAction func userBtnClicked(sender: UIButton) {

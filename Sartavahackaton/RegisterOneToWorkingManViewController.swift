@@ -10,26 +10,49 @@ import UIKit
 
 class RegisterOneToWorkingManViewController: UIViewController {
 
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var fNameTF: UITextField!
+    @IBOutlet weak var lNameTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnContinue(sender: UIButton) {
+        //if First name and last name is empty
+        if lNameTF.text?.isEmpty == true && fNameTF.text?.isEmpty == true {
+            let alert = UIAlertController(title: "Error", message: "You have to input your First and Last name", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+            
+        //If Last name is empty
+        else if lNameTF.text?.isEmpty == true {
+            let alert = UIAlertController(title: "Error", message: "You have to input your Last name", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+         
+        //If First name is empty
+        else if fNameTF.text?.isEmpty == true {
+            let alert = UIAlertController(title: "Error", message: "You have to input your First and Last name", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+            
+        else {
+            let d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+            d.setObject(fNameTF.text!, forKey: "fName")
+            d.setObject(lNameTF.text!, forKey: "lName")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnChangeProfliePic(sender: UIButton) {
+        
     }
-    */
 
 }
