@@ -12,6 +12,8 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
 
     @IBOutlet weak var OutletBussinesInfo: UIButton!
     @IBOutlet weak var OutletNormalInfo: UIButton!
+    @IBOutlet weak var OutletBusinessChosen: UIButton!
+    @IBOutlet weak var OutletNormalChosen: UIButton!
     
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     var isHighLighted: Bool = false
@@ -63,6 +65,7 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
         if self.isHighLighted == false {
             sender.highlighted = true
             self.isHighLighted = true
+            self.OutletNormalChosen.highlighted = false
         }
             
         else {
@@ -73,7 +76,6 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
         
         //Save User Choice
         d.setObject(true, forKey: "isBussines")
-
     }
     
     @IBAction func userBtnClicked(sender: UIButton) {
@@ -83,6 +85,7 @@ class ChooseWorkingManOrUsuallyManViewController: UIViewController {
             if self.isHighLighted == false {
                 sender.highlighted = true
                 self.isHighLighted = true
+               self.OutletBusinessChosen.highlighted = false
             }
                 
             else {

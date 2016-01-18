@@ -16,6 +16,7 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var secondPassTF: UITextField!
     
+    var userProfilePicTwo : UIImageView!
     var showPass: Bool = false
     
     override func viewDidLoad() {
@@ -40,9 +41,12 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
         user.password = passTF.text
         user.email = emailTF.text
         
+        let parseImageFile = PFFile(name: "profile_image.png", data: UIImagePNGRepresentation((self.userProfilePicTwo.image!))!)
+        
         user.setObject(d.objectForKey("fName")!, forKey: "fName")
         user.setObject(d.objectForKey("lName")!, forKey: "lName")
         user.setObject(d.objectForKey("isBussines")!, forKey: "isBussines")
+        user.setObject(parseImageFile!, forKey: "profilePic")
         
         if passTF.text != secondPassTF.text {
                 let alert = UIAlertController(title: "Error", message: "Your passwords does not match", preferredStyle: UIAlertControllerStyle.Alert)
@@ -84,10 +88,4 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
     @IBAction func btnCountinue(sender: AnyObject) {
         self.SignUp()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
