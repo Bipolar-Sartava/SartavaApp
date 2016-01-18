@@ -12,18 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let alert = UIAlertView(title: "Hello", message: "Heelo", delegate: self, cancelButtonTitle: "OK")
-        
-        self.view.addSubview(alert)
-    }
-    
-    //hide status bar
-    override func prefersStatusBarHidden() -> Bool {
-        
-        return true
-    }
-    
 
+        
+    }
 
 }
 

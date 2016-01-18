@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //track statistics
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        application.statusBarHidden = true
         return true
     }
 
