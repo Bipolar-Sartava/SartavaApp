@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -365,7 +364,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="login" title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -384,19 +383,10 @@
                                     <constraint firstAttribute="width" constant="240" id="x9r-Ch-R0D"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="שם משתמש" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-X1-3pN">
-                                <rect key="frame" x="200" y="211" width="203" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Bpp-z5-OHS"/>
-                                    <constraint firstAttribute="width" constant="203" id="OXV-Rv-SEo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="סיסמא" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-WZ-Nh7">
                                 <rect key="frame" x="200" y="249" width="203" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a63-w7-oZo">
                                 <rect key="frame" x="200" y="287" width="203" height="30"/>
@@ -411,7 +401,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rTo-U3-TWb" kind="modal" id="nOY-bS-svM"/>
+                                    <action selector="LoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndJ-5j-8p6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-Zg-Ecd">
@@ -452,6 +442,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="שם משתמש" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-X1-3pN">
+                                <rect key="frame" x="200" y="211" width="203" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bpp-z5-OHS"/>
+                                    <constraint firstAttribute="width" constant="203" id="OXV-Rv-SEo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -483,6 +482,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="We8-KC-hHy"/>
+                    <connections>
+                        <outlet property="passTF" destination="dTt-WZ-Nh7" id="Qzv-di-MXd"/>
+                        <outlet property="userNameTF" destination="nmD-X1-3pN" id="qcw-3i-9rf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -709,11 +712,18 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UsuallyManIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-SM-hkv">
                                 <rect key="frame" x="225" y="102" width="151" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Vzm-PL-nvC"/>
+                                    <constraint firstAttribute="height" constant="128" id="sxZ-sm-w2v"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcw-JP-Xas">
                                 <rect key="frame" x="225" y="233" width="151" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="לחץ כאן להוספת תמונה!"/>
+                                <connections>
+                                    <action selector="changeProfilePicBtn:" destination="gvu-29-vwM" eventType="touchUpInside" id="Ln8-us-B10"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם פרטי" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggX-XP-EiE">
                                 <rect key="frame" x="225" y="296" width="173" height="30"/>
@@ -766,7 +776,7 @@
                                 <state key="normal" image="CheckMarkIcon.png"/>
                                 <connections>
                                     <action selector="btnContinue:" destination="gvu-29-vwM" eventType="touchUpInside" id="id0-Lw-cNt"/>
-                                    <segue destination="6sT-NW-iWI" kind="modal" id="Ke9-aF-Gbq"/>
+                                    <segue destination="6sT-NW-iWI" kind="modal" identifier="normalSegue" id="Ke9-aF-Gbq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -809,6 +819,7 @@
                     <connections>
                         <outlet property="fNameTF" destination="ggX-XP-EiE" id="VVA-dg-drY"/>
                         <outlet property="lNameTF" destination="pEm-gl-MJc" id="H17-1k-Rmf"/>
+                        <outlet property="userProfilePic" destination="AgD-SM-hkv" id="0d2-61-L6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weL-bV-xy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -818,7 +829,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="qn2-o6-LED">
             <objects>
-                <viewController id="rTo-U3-TWb" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logged" id="rTo-U3-TWb" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lZe-3S-KfL"/>
                         <viewControllerLayoutGuide type="bottom" id="nhc-8G-Vyy"/>
@@ -1523,7 +1534,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-uT-sYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160" y="1465"/>
+            <point key="canvasLocation" x="168" y="1465"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TNw-7N-KhI">
@@ -1703,6 +1714,9 @@
                                     <action selector="btnNormalInfo:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="5uB-VM-DhX"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-ek-MNs">
+                                <rect key="frame" x="20" y="40" width="560" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1711,6 +1725,7 @@
                             <constraint firstItem="IMH-Ge-Dy4" firstAttribute="top" secondItem="HWp-Es-CI9" secondAttribute="bottom" constant="58" id="3Vi-jg-lnM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Azz-0R-bp1" secondAttribute="trailing" constant="-20" id="57z-e2-9JG"/>
                             <constraint firstItem="8A6-Cb-6d7" firstAttribute="top" secondItem="AKD-ri-ntr" secondAttribute="bottom" constant="17" id="5bo-dX-wKg"/>
+                            <constraint firstItem="JWR-ek-MNs" firstAttribute="trailing" secondItem="YHx-HT-e7H" secondAttribute="trailingMargin" id="6F0-Cp-tL0"/>
                             <constraint firstItem="BKX-a7-XV5" firstAttribute="trailing" secondItem="IMH-Ge-Dy4" secondAttribute="trailing" id="8t6-a0-o4f"/>
                             <constraint firstItem="IMH-Ge-Dy4" firstAttribute="centerY" secondItem="S8E-WL-hda" secondAttribute="centerY" id="CTl-Y3-kDG"/>
                             <constraint firstItem="kdt-4H-QWk" firstAttribute="top" secondItem="Azz-0R-bp1" secondAttribute="bottom" id="Fbs-Mz-C8c"/>
@@ -1720,6 +1735,7 @@
                             <constraint firstItem="HWp-Es-CI9" firstAttribute="centerX" secondItem="YHx-HT-e7H" secondAttribute="centerX" id="O8I-L9-r9l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IMH-Ge-Dy4" secondAttribute="trailing" constant="-20" id="OLw-f2-vnE"/>
                             <constraint firstItem="HWp-Es-CI9" firstAttribute="top" secondItem="YHx-HT-e7H" secondAttribute="topMargin" id="Phd-sP-BNw"/>
+                            <constraint firstItem="JWR-ek-MNs" firstAttribute="top" secondItem="HWp-Es-CI9" secondAttribute="bottom" constant="8" id="QV3-9m-DLA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BKX-a7-XV5" secondAttribute="trailing" constant="-20" id="Qrg-tV-zy6"/>
                             <constraint firstItem="IMH-Ge-Dy4" firstAttribute="centerX" secondItem="YHx-HT-e7H" secondAttribute="centerX" id="SK9-Sy-Nc2"/>
                             <constraint firstItem="LTo-l7-QcE" firstAttribute="top" secondItem="IMH-Ge-Dy4" secondAttribute="bottom" constant="9" id="UQd-l7-kcw"/>
@@ -1735,6 +1751,7 @@
                             <constraint firstItem="IMH-Ge-Dy4" firstAttribute="top" secondItem="HWp-Es-CI9" secondAttribute="bottom" constant="58" id="mPw-uq-LnA"/>
                             <constraint firstItem="AKD-ri-ntr" firstAttribute="leading" secondItem="YHx-HT-e7H" secondAttribute="leadingMargin" constant="11" id="pDG-IK-YB8"/>
                             <constraint firstItem="LTo-l7-QcE" firstAttribute="trailing" secondItem="YHx-HT-e7H" secondAttribute="trailingMargin" constant="-15" id="pTD-an-Tlt"/>
+                            <constraint firstItem="JWR-ek-MNs" firstAttribute="leading" secondItem="YHx-HT-e7H" secondAttribute="leadingMargin" id="pzd-Rm-xPB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IMH-Ge-Dy4" secondAttribute="trailing" constant="-20" id="qHW-LB-8cJ"/>
                             <constraint firstItem="8A6-Cb-6d7" firstAttribute="top" secondItem="BKX-a7-XV5" secondAttribute="bottom" constant="8" id="tlh-ON-s1i"/>
                             <constraint firstItem="LTo-l7-QcE" firstAttribute="trailing" secondItem="YHx-HT-e7H" secondAttribute="trailingMargin" id="wRj-ZB-ai7"/>
@@ -1753,7 +1770,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Zai-Fn-Izl"/>
                     <connections>
+                        <outlet property="OutletBusinessChosen" destination="IMH-Ge-Dy4" id="XyS-1i-S2C"/>
                         <outlet property="OutletBussinesInfo" destination="S8E-WL-hda" id="7wc-nW-L2A"/>
+                        <outlet property="OutletNormalChosen" destination="BKX-a7-XV5" id="05J-QP-Q1a"/>
                         <outlet property="OutletNormalInfo" destination="AKD-ri-ntr" id="Wp4-s6-dwM"/>
                     </connections>
                 </viewController>
