@@ -13,19 +13,25 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
 
     @IBAction func TripsBtn(sender: AnyObject)
     {
-
+        imageLable = ["Trips1","Trips2","Trips3"]
+        images = [UIImage(named: "Baloons"),UIImage(named: "Tree3"),UIImage(named: "Plains 2")]
+        clview.reloadData()
     }
     @IBAction func HotelsBtn(sender: AnyObject)
     {
-        
+        imageLable = ["Hotel1","Hotel2","Hotel3"]
+        images = [UIImage(named: "Plains 2"),UIImage(named: "Baloons"),UIImage(named: "Tree3")]
+        clview.reloadData()
     }
     @IBAction func AttractionsBtn(sender: AnyObject)
     {
-        
+        imageLable = ["Attraction1","Attraction2","Attraction3"]
+        images = [UIImage(named: "Tree3"),UIImage(named: "Plains 2"),UIImage(named: "Baloons")]
+        clview.reloadData()
     }
     //collection view protocols length
-    let imageLable = ["Attraction1","Attraction2","Attraction3"]
-    let images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
+    var imageLable = ["Attraction1","Attraction2","Attraction3"]
+    var images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
     @IBOutlet weak var clview: UICollectionView!
 
     
