@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Parse
 
-class RegisterOneUsualyViewController: UIViewController {
+class RegisterOneUsualyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var fNameTF: UITextField!
     @IBOutlet weak var lNameTF: UITextField!
+    @IBOutlet weak var userProfilePic: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,10 +53,18 @@ class RegisterOneUsualyViewController: UIViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func changeProfilePicBtn(sender: AnyObject) {
+        
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        
+        self.presentViewController(pickerController, animated: true, completion: nil)
     }
- 
-
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        userProfilePic.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
