@@ -710,13 +710,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UsuallyManIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-SM-hkv">
-                                <rect key="frame" x="225" y="102" width="151" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="Vzm-PL-nvC"/>
-                                    <constraint firstAttribute="height" constant="128" id="sxZ-sm-w2v"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcw-JP-Xas">
                                 <rect key="frame" x="225" y="233" width="151" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
@@ -779,6 +772,13 @@
                                     <segue destination="6sT-NW-iWI" kind="modal" identifier="normalSegue" id="Ke9-aF-Gbq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UsuallyManIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-SM-hkv">
+                                <rect key="frame" x="225" y="102" width="151" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Vzm-PL-nvC"/>
+                                    <constraint firstAttribute="height" constant="128" id="sxZ-sm-w2v"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

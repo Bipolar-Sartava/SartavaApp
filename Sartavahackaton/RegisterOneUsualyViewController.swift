@@ -67,11 +67,4 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
- 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destVC : RegisterTwoToUsuallyPeopleViewController = segue.destinationViewController as! RegisterTwoToUsuallyPeopleViewController
-        
-        destVC.userProfilePicTwo = userProfilePic
-    }
-
 }
