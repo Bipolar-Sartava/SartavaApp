@@ -356,7 +356,7 @@
 				TargetAttributes = {
 					3ED616441C45458400422CDC = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 73QN96ZXDN;
+						DevelopmentTeam = S67SFV48QJ;
 					};
 					3ED616581C45458400422CDC = {
 						CreatedOnToolsVersion = 7.2;
@@ -591,15 +591,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sartavahackaton",
 				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -610,15 +613,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sartavahackaton",
 				);
 				INFOPLIST_FILE = Sartavahackaton/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartavahackaton;
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
 			};
 			name = Release;
