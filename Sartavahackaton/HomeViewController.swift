@@ -9,32 +9,70 @@
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate{
-
+class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    //btns functions(Trips,Attractions and Hotels)
     @IBAction func TripsBtn(sender: AnyObject)
     {
         imageLable = ["Trips1","Trips2","Trips3"]
         images = [UIImage(named: "Baloons"),UIImage(named: "Tree3"),UIImage(named: "Plains 2")]
         clview.reloadData()
+        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
+        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
+        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: true)
     }
     @IBAction func HotelsBtn(sender: AnyObject)
     {
         imageLable = ["Hotel1","Hotel2","Hotel3"]
         images = [UIImage(named: "Plains 2"),UIImage(named: "Baloons"),UIImage(named: "Tree3")]
         clview.reloadData()
+        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
+        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
+        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Top, animated: true)
     }
     @IBAction func AttractionsBtn(sender: AnyObject)
     {
         imageLable = ["Attraction1","Attraction2","Attraction3"]
-        images = [UIImage(named: "Tree3"),UIImage(named: "Plains 2"),UIImage(named: "Baloons")]
+        images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
         clview.reloadData()
+        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
+        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
+        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: true)
+    }
+    //ipc
+    var ipc : UIImagePickerController?
+    //Create another UIBarButtonItem(Camera)
+    func addItem()
+    {
+        let camera : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: "ActivateCamera")
+        self.navigationItem.rightBarButtonItem = camera
+    }
+    //Activate the camera 
+    func ActivateCamera()
+    {
+        ipc = UIImagePickerController()
+        //Checking if the device posses a camera
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
+        {
+            ipc?.sourceType = UIImagePickerControllerSourceType.Camera
+        }
+        else
+        {
+            ipc?.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        }
+        ipc?.delegate = self
+        ipc?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        self.presentViewController(ipc!, animated: true, completion: nil)
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let story : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let infovc : CollectionViewController = story.instantiateViewControllerWithIdentifier("InfoVC") as! CollectionViewController
+        self.navigationController?.pushViewController(infovc, animated: true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     //collection view protocols length
     var imageLable = ["Attraction1","Attraction2","Attraction3"]
     var images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
     @IBOutlet weak var clview: UICollectionView!
-
-    
     //Writing protocols
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.imageLable.count
@@ -68,7 +106,8 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Activate AddItem
+        self.addItem()
         //Menu Btn Stuff
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()
