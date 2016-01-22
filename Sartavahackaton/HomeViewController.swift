@@ -16,27 +16,25 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         imageLable = ["Trips1","Trips2","Trips3"]
         images = [UIImage(named: "Baloons"),UIImage(named: "Tree3"),UIImage(named: "Plains 2")]
         clview.reloadData()
-        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
-        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
-        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: true)
+        
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
     }
     @IBAction func HotelsBtn(sender: AnyObject)
     {
         imageLable = ["Hotel1","Hotel2","Hotel3"]
         images = [UIImage(named: "Plains 2"),UIImage(named: "Baloons"),UIImage(named: "Tree3")]
         clview.reloadData()
-        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
-        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
-        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Top, animated: true)
+        
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
     }
     @IBAction func AttractionsBtn(sender: AnyObject)
     {
         imageLable = ["Attraction1","Attraction2","Attraction3"]
         images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
         clview.reloadData()
-        var item = self.collectionView(self.clview!, numberOfItemsInSection: 0) - 1
-        var lastItemIndex = NSIndexPath(forItem: item, inSection: 0)
-        self.clview?.scrollToItemAtIndexPath(lastItemIndex, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: true)
+        
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
+      
     }
     //ipc
     var ipc : UIImagePickerController?
@@ -83,6 +81,9 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         cell.img.image = self.images[indexPath.row]
         cell.lblT.text = self.imageLable[indexPath.row]
         
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 5
+        
         return cell
     }
     
@@ -128,6 +129,9 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
+        
+        
+        self.clview.backgroundColor = UIColor.clearColor()
         
         //blur effect
 //        var blur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
