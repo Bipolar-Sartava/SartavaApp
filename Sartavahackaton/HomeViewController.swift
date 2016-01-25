@@ -39,40 +39,6 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
       
     }
-    
-    //ipc
-    var ipc : UIImagePickerController?
-    //Create another UIBarButtonItem(Camera)
-    func addItem()
-    {
-        let camera : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: "ActivateCamera")
-        self.navigationItem.rightBarButtonItem = camera
-    }
-    
-    //Activate the camera 
-    func ActivateCamera()
-    {
-        ipc = UIImagePickerController()
-        //Checking if the device posses a camera
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
-        {
-            ipc?.sourceType = UIImagePickerControllerSourceType.Camera
-        }
-        else
-        {
-            ipc?.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        }
-        ipc?.delegate = self
-        ipc?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        self.presentViewController(ipc!, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        let story : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let infovc : CollectionViewController = story.instantiateViewControllerWithIdentifier("InfoVC") as! CollectionViewController
-        self.navigationController?.pushViewController(infovc, animated: true)
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     //collection view protocols length
     var imageLable = ["Attraction1","Attraction2","Attraction3"]
     var images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
@@ -120,8 +86,6 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Activate AddItem
-        self.addItem()
         //Menu Btn Stuff
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()

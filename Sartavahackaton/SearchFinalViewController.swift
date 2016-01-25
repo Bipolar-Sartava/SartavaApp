@@ -29,11 +29,7 @@ class SearchFinalViewController: UIViewController, MKMapViewDelegate {
     
     func checkLocationAuthorize() {
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
-            map.showsUserLocation = true
-        }
-        
-        else {
-            LocationManager.requestWhenInUseAuthorization()
+            
         }
     }
 
