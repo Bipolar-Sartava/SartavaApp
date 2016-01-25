@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var btnMenu: UIBarButtonItem!
+    @IBOutlet weak var map: MKMapView!
+    
+    let LocationManager = CLLocationManager()
+    let regionRadius: CLLocationDistance = 1000
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Side Menu Stuff
@@ -27,9 +33,30 @@ class MapViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(animated: Bool) {
+        self.checkLocationAuthorize()
+    }
+    
+    func checkLocationAuthorize() {
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            map.showsUserLocation = true
+        }
+            
+        else {
+            LocationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    func centerMap(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2, regionRadius * 2)
+        map.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        if let location = userLocation.location {
+            centerMap(location)
+        }
+    
     }
 
 }
