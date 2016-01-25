@@ -25,12 +25,15 @@ class SearchFinalViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         self.checkLocationAuthorize()
-
     }
     
     func checkLocationAuthorize() {
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
-            map.showAnnotations(<#T##annotations: [MKAnnotation]##[MKAnnotation]#>, animated: <#T##Bool#>)
+            map.showsUserLocation = true
+        }
+        
+        else {
+            LocationManager.requestWhenInUseAuthorization()
         }
     }
 
