@@ -10,10 +10,19 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var AttCatView: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var bgImg: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var btnMenu: UIBarButtonItem!
-    @IBOutlet weak var btnGroup: UIButton!
-    @IBOutlet weak var btnCreateGroup: UIButton!
+    @IBOutlet weak var outletTrips: UIButton!
+    @IBOutlet weak var outletHotels: UIButton!
+    @IBOutlet weak var outletAtt: UIButton!
+    
+    
+    var blurEffectView: UIVisualEffectView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
@@ -21,32 +30,58 @@ class SearchViewController: UIViewController {
             btnMenu.target = self.revealViewController()
             btnMenu.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            //Group Btns Alignment
-            btnGroup.titleLabel?.textAlignment = .Right
-            btnCreateGroup.titleLabel?.textAlignment = .Right
         }
         
         //Nav Bar Stuff
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        //Buttons
+        outletAtt.titleLabel?.textAlignment = .Right
+        outletHotels.titleLabel?.textAlignment = .Right
+        outletTrips.titleLabel?.textAlignment = .Right
+        
+        //Blur
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        
+        self.view.addSubview(blurEffectView)
+        blurEffectView.layer.zPosition = 2
+        bgImg.layer.zPosition = 1
+        outletAtt.layer.zPosition = 3
+        outletHotels.layer.zPosition = 3
+        outletTrips.layer.zPosition = 3
+        searchBar.layer.zPosition = 3
+        view1.layer.zPosition = 3
+        view2.layer.zPosition = 3
+        view3.layer.zPosition = 3
+        blurEffectView.alpha = 0.9
+        blurEffectView.userInteractionEnabled = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func AttChosen(sender: UIButton) {
+        AttCatView.hidden = false
+        AttCatView.layer.zPosition = 3
+        bgImg.layer.zPosition = 1
+        outletAtt.hidden = true
+        outletHotels.hidden = true
+        outletTrips.hidden = true
+        searchBar.hidden = true
+        view1.hidden = true
+        view2.hidden = true
+        view3.hidden = true
+        
+        self.navigationController?.navigationBarHidden = true
     }
-    */
-
+    
+    @IBAction func TripsChosen(sender: UIButton) {
+        
+    }
+    
+    @IBAction func HotelSchosen(sender: UIButton) {
+        
+    }
 }

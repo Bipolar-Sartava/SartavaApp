@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import MapKit
 
 class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     //btns functions(Trips,Attractions and Hotels)
@@ -19,6 +20,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         
         clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
     }
+    
     @IBAction func HotelsBtn(sender: AnyObject)
     {
         imageLable = ["Hotel1","Hotel2","Hotel3"]
@@ -27,6 +29,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         
         clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
     }
+    
     @IBAction func AttractionsBtn(sender: AnyObject)
     {
         imageLable = ["Attraction1","Attraction2","Attraction3"]
@@ -36,6 +39,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
       
     }
+    
     //ipc
     var ipc : UIImagePickerController?
     //Create another UIBarButtonItem(Camera)
@@ -44,6 +48,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         let camera : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Camera, target: self, action: "ActivateCamera")
         self.navigationItem.rightBarButtonItem = camera
     }
+    
     //Activate the camera 
     func ActivateCamera()
     {
@@ -61,6 +66,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         ipc?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         self.presentViewController(ipc!, animated: true, completion: nil)
     }
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let story : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let infovc : CollectionViewController = story.instantiateViewControllerWithIdentifier("InfoVC") as! CollectionViewController
@@ -104,7 +110,14 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
             vc.title = self.imageLable[indexPath.row]
         }
     }
+    
     @IBOutlet weak var btnMenu: UIBarButtonItem!
+    @IBOutlet weak var showProfileImg: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var outletTripsbtn: UIButton!
+    
+    let LocationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Activate AddItem
@@ -130,27 +143,27 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
         
-        
         self.clview.backgroundColor = UIColor.clearColor()
+        var usersNames: String = ""
+        if let fName = PFUser.currentUser()?.objectForKey("fName"), let lName = PFUser.currentUser()?.objectForKey("lName") {
+            usersNames = "\(fName) \(lName)"
+        }
         
-        //blur effect
-//        var blur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-//        var blurView = UIVisualEffectView(effect: blur)
-//        blurView.frame = view.bounds
-//        blurView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-//        view.addSubview(blurView)
+        nameLbl.text = usersNames
+        outletTripsbtn.titleLabel?.textAlignment = .Right
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        showProfileImg.layer.cornerRadius = showProfileImg.frame.size.height/2
+        showProfileImg.clipsToBounds = true
+        showProfileImg.layer.borderWidth = 1
         
+        self.checkLocationAuthorize()
     }
-
     
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func checkLocationAuthorize() {
+        if CLLocationManager.authorizationStatus() != .AuthorizedWhenInUse {
+            LocationManager.requestWhenInUseAuthorization()
+        }
     }
-
-
 }
