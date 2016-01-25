@@ -86,7 +86,13 @@ class RegisterTwoToWorkingManViewController: UIViewController {
                 //If Signed Up Succsesfully
                 if error == nil {
                     let alert = UIAlertController(title: "Signed Up!", message: "You Have successfully Signed Up!", preferredStyle:     UIAlertControllerStyle.Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+                        
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let loginVC : LoginViewController = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
+                        
+                        self.presentViewController(loginVC, animated: true, completion: { PFUser.logOut()})
+                    }))
                     self.presentViewController(alert, animated: true, completion: nil)
                 }
                     //If there is an error with sign up

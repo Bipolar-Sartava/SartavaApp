@@ -17,36 +17,59 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var bgImg: UIImageView!
     @IBOutlet weak var outletLogin: UIButton!
     @IBOutlet weak var fbSignOutlet: UIButton!
+    @IBOutlet weak var signUpOutlet: UIButton!
+    @IBOutlet weak var forgotPassOutlet: UIButton!
 
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //Check if its the first time
+        if (NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce")) {
+            // app already launched
+        }
+        else {
+            // This is the first launch ever
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+            let alert = UIAlertController(title: "Error", message: "What is your primary Language?", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "עברית", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+                self.d.setBool(true, forKey: "UserPrefEnglish")
+            }))
+            
+            alert.addAction(UIAlertAction(title: "English", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+                self.d.setBool(true, forKey: "UserPrefEnglish")
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
         
+        if d.boolForKey("UserPrefEnglish") {
+            self.UserUseEnglish()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         userNameTF.text = d.objectForKey("userNameNSUSER") as? String
-        print(d.objectForKey("userNameNSUSER"))
-        
-        let bgImages = ["Baloons", "Plains 2", "Tree3"]
-        
-        let RandomBgImg = arc4random()%3
-    
-        if RandomBgImg == 1 {
-            bgImg.image = UIImage(named: bgImages[0])
-        }
-        
-        else if RandomBgImg == 1 {
-               bgImg.image = UIImage(named: bgImages[1])
-        }
-        
-        else if RandomBgImg == 1 {
-               bgImg.image = UIImage(named: bgImages[2])
-        }
     }
     
+    func UserUseEnglish() {
+        //TFs
+        userNameTF.placeholder = "User Name"
+        userNameTF.textAlignment = .Left
+        passTF.placeholder = "Password"
+        passTF.textAlignment = .Left
+        
+        //Buttons
+        outletLogin.titleLabel?.text = "Login"
+        outletLogin.titleLabel?.textAlignment = .Center
+        fbSignOutlet.titleLabel?.text = "Sign Up With Facebook"
+        fbSignOutlet.titleLabel?.textAlignment = .Center
+        signUpOutlet.titleLabel?.text = "Sign Up"
+        signUpOutlet.titleLabel?.textAlignment = .Center
+        forgotPassOutlet.titleLabel?.text = "Forgot Pass?"
+        forgotPassOutlet.titleLabel?.textAlignment = .Center
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "logOut" {
             PFUser.logOut()
