@@ -129,8 +129,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         if d.boolForKey("UserPrefEnglish") {
             self.UserUseEnglish()
         }
-        self.checkLocationAuthorize()
-    }
+        self.checkLocationAuthorize()    }
     
     func UserUseEnglish() {
         OutletShowTrips.setTitle("Group Trips", forState: UIControlState.Normal)

@@ -44,6 +44,7 @@
 		3ED616691C45458400422CDC /* SartavahackatonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616681C45458400422CDC /* SartavahackatonUITests.swift */; };
 		3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */; };
 		3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E71C46B7280057DA32 /* HomeViewController.swift */; };
+		3EF106211C58EF51005EFE2A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF106201C58EF51005EFE2A /* MenuTableViewController.swift */; };
 		3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */; };
 		3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */; };
 		3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7A73F1C4D400400012326 /* LoginViewController.swift */; };
@@ -121,6 +122,7 @@
 		3EEA04E31C46B39D0057DA32 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		3EEA04E71C46B7280057DA32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3EF106201C58EF51005EFE2A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		3EF7A73F1C4D400400012326 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */,
 				3EF7A73F1C4D400400012326 /* LoginViewController.swift */,
 				3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */,
+				3EF106201C58EF51005EFE2A /* MenuTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
 				3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */,
+				3EF106211C58EF51005EFE2A /* MenuTableViewController.swift in Sources */,
 				705EA1381C49B9850043C504 /* Cell.swift in Sources */,
 				709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */,
 				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,

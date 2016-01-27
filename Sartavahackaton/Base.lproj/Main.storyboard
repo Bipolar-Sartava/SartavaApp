@@ -1095,7 +1095,7 @@
         <!--Home-->
         <scene sceneID="3Qn-2Z-fBs">
             <objects>
-                <viewController title="Home" id="XsB-uF-9fD" customClass="HomeViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" title="Home" id="XsB-uF-9fD" customClass="HomeViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="URU-8d-bXu"/>
                         <viewControllerLayoutGuide type="bottom" id="x79-TP-7Xg"/>
