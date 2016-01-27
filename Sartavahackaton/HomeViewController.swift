@@ -81,8 +81,12 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
     @IBOutlet weak var showProfileImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var outletTripsbtn: UIButton!
+    @IBOutlet weak var OutletShowTrips: UIButton!
+    @IBOutlet weak var OutletShowHotels: UIButton!
+    @IBOutlet weak var OutletShowAtt: UIButton!
     
     let LocationManager = CLLocationManager()
+    var d = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,7 +126,17 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         showProfileImg.clipsToBounds = true
         showProfileImg.layer.borderWidth = 1
         
-        self.checkLocationAuthorize()
+        if d.boolForKey("UserPrefEnglish") {
+            self.UserUseEnglish()
+        }
+        self.checkLocationAuthorize()    }
+    
+    func UserUseEnglish() {
+        OutletShowTrips.setTitle("Group Trips", forState: UIControlState.Normal)
+        OutletShowHotels.setTitle("Hotels", forState: UIControlState.Normal)
+        OutletShowAtt.setTitle("Attractions", forState: UIControlState.Normal)
+        outletTripsbtn.setTitle("Group Trips", forState: UIControlState.Normal)
+        outletTripsbtn.titleLabel?.textAlignment = .Left
     }
     
     func checkLocationAuthorize() {

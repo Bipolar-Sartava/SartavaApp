@@ -24,16 +24,23 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+  
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        userNameTF.text = d.objectForKey("userNameNSUSER") as? String
         //Check if its the first time
-        if (NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce")) {
+        if (d.objectForKey("HasLaunchedOnce5")?.boolValue == true) {
             // app already launched
         }
+            
         else {
             // This is the first launch ever
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            let alert = UIAlertController(title: "Error", message: "What is your primary Language?", preferredStyle: UIAlertControllerStyle.Alert)
+            d.setBool(true, forKey: "HasLaunchedOnce5")
+            let alert = UIAlertController(title: "Welcom", message: "What is your primary Language?", preferredStyle: UIAlertControllerStyle.Alert)
+            
             alert.addAction(UIAlertAction(title: "עברית", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
-                self.d.setBool(true, forKey: "UserPrefEnglish")
+                self.d.setBool(false, forKey: "UserPrefEnglish")
             }))
             
             alert.addAction(UIAlertAction(title: "English", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
@@ -41,16 +48,22 @@ class LoginViewController: UIViewController {
             }))
             
             self.presentViewController(alert, animated: true, completion: nil)
-            NSUserDefaults.standardUserDefaults().synchronize()
+            d.synchronize()
         }
         
-        if d.boolForKey("UserPrefEnglish") {
+        if d.boolForKey("UserPrefEnglish") == true {
             self.UserUseEnglish()
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
-        userNameTF.text = d.objectForKey("userNameNSUSER") as? String
+    @IBAction func ChangeLanguage(sender: UIButton) {
+        if d.boolForKey("UserPrefEnglish") == false {
+            self.d.setBool(true, forKey: "UserPrefEnglish")
+        }
+        
+        else {
+             self.d.setBool(false, forKey: "UserPrefEnglish")
+        }
     }
     
     func UserUseEnglish() {
@@ -61,14 +74,14 @@ class LoginViewController: UIViewController {
         passTF.textAlignment = .Left
         
         //Buttons
-        outletLogin.titleLabel?.text = "Login"
+        outletLogin.setTitle("Login", forState: UIControlState.Normal)
         outletLogin.titleLabel?.textAlignment = .Center
-        fbSignOutlet.titleLabel?.text = "Sign Up With Facebook"
+        fbSignOutlet.setTitle("Sign Up With Facebook", forState: UIControlState.Normal)
         fbSignOutlet.titleLabel?.textAlignment = .Center
-        signUpOutlet.titleLabel?.text = "Sign Up"
-        signUpOutlet.titleLabel?.textAlignment = .Center
-        forgotPassOutlet.titleLabel?.text = "Forgot Pass?"
-        forgotPassOutlet.titleLabel?.textAlignment = .Center
+        signUpOutlet.setTitle("Sign Up", forState: UIControlState.Normal)
+        signUpOutlet.titleLabel?.textAlignment = .Left
+        forgotPassOutlet.setTitle("Forgot Pass?", forState: UIControlState.Normal)
+        forgotPassOutlet.titleLabel?.textAlignment = .Left
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "logOut" {

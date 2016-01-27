@@ -20,9 +20,9 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var outletTrips: UIButton!
     @IBOutlet weak var outletHotels: UIButton!
     @IBOutlet weak var outletAtt: UIButton!
-    
-    
+        
     var blurEffectView: UIVisualEffectView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
@@ -78,10 +78,10 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func TripsChosen(sender: UIButton) {
-        
+
     }
     
     @IBAction func HotelSchosen(sender: UIButton) {
-        
+
     }
 }
