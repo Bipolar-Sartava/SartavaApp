@@ -18,7 +18,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         images = [UIImage(named: "Baloons"),UIImage(named: "Tree3"),UIImage(named: "Plains 2")]
         clview.reloadData()
         
-        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.63, clview.frame.origin.y - clview.frame.size.height + 315), animated: true)
     }
     
     @IBAction func HotelsBtn(sender: AnyObject)
@@ -27,7 +27,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         images = [UIImage(named: "Plains 2"),UIImage(named: "Baloons"),UIImage(named: "Tree3")]
         clview.reloadData()
         
-        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.63, clview.frame.origin.y - clview.frame.size.height + 315), animated: true)
     }
     
     @IBAction func AttractionsBtn(sender: AnyObject)
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController ,UICollectionViewDataSource, UICollec
         images = [UIImage(named: "Plains 2"),UIImage(named: "Tree3"),UIImage(named: "Baloons")]
         clview.reloadData()
         
-        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.5, clview.frame.origin.y - clview.frame.size.height + 120), animated: true)
+        clview.setContentOffset(CGPointMake(clview.center.x - clview.frame.size.width * 0.63, clview.frame.origin.y - clview.frame.size.height + 315), animated: true)
       
     }
     //collection view protocols length
