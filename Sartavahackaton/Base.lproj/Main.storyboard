@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -2416,7 +2417,7 @@
         <image name="jeep" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="tw8-X1-IuV"/>
         <segue reference="0C6-Xa-HX5"/>
-        <segue reference="xj6-n5-Fsb"/>
     </inferredMetricsTieBreakers>
 </document>

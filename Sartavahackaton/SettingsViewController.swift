@@ -1,61 +1,88 @@
 import UIKit
+import Parse
 
 
 
 class SettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    //save btn saves changes for email and password
-    
-    @IBAction func savechanges(sender: AnyObject) {
-        
-    }
-    
     //all txt's
     
     @IBOutlet weak var txtname: UITextField!
-    
     @IBOutlet weak var txtusername: UITextField!
-    
     @IBOutlet weak var txtchange1: UITextField!
-    
     @IBOutlet weak var txtchange2: UITextField!
+    
+    var changingEmail: Bool = false
     
     //done editing info
     
-    @IBAction func btndone(sender: AnyObject)
+    @IBAction func btndone(sender: AnyObject) {
+        var user = PFUser.currentUser()
+        if txtusername != nil || txtusername.text != "" {
+            user?.username = txtusername.text
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Invalid UserName", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        if txtname != nil || txtname.text != "" {
+            user!["fName"] = txtname.text
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Invalid name", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
         
-    {
-        
+        if changingEmail {
+            if txtchange1.text != nil || txtchange1.text != "" || txtchange2.text != nil || txtchange2.text != "" {
+                if txtchange1.text == user?.email {
+                    user?.email = txtchange2.text
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "This is not your OLD Email", preferredStyle:    UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
+
+            } else {
+                if txtchange1.text == user?.password {
+                    user?.password = txtchange2.text
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "This is not your OLD Password", preferredStyle:     UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
+            }
+        }
+
     }
     
     //change email function
     
-    @IBAction func changeemail(sender: AnyObject)
-        
-    {
-        
+    @IBAction func changeemail(sender: AnyObject) {
+        changingEmail = true
         txtchange1.hidden = false
-        
         txtchange2.hidden = false
-        
+        txtchange1.text = ""
+        txtchange2.text = ""
         txtchange1.placeholder = "Old Email"
-        
         txtchange2.placeholder = "New Email"
         
     }
     
     //change password function
     
-    @IBAction func changepass(sender: AnyObject)
-        
-    {
-        
+    @IBAction func changepass(sender: AnyObject) {
         txtchange1.hidden = false
-        
         txtchange2.hidden = false
-        
+        txtchange1.text = ""
+        txtchange2.text = ""
+        txtchange1.secureTextEntry = true
+        txtchange2.secureTextEntry = true
         txtchange1.placeholder = "Old Password"
-        
         txtchange2.placeholder = "New Password"
         
     }
@@ -66,9 +93,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
     
     //change profile pic
     
-    @IBAction func EditPicBtn(sender: AnyObject)
-        
-    {
+    @IBAction func EditPicBtn(sender: AnyObject) {
         
         ipc = UIImagePickerController()
         
