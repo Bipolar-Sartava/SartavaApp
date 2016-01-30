@@ -1104,9 +1104,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="ODs-G6-ef4">
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="ODs-G6-ef4">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-me-eSQ">
+                                <rect key="frame" x="-1" y="64" width="601" height="536"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nTx-4F-xgK">
+                                    <rect key="frame" x="0.0" y="0.0" width="601" height="536"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-IW-DcF">
                                 <rect key="frame" x="500" y="200" width="100" height="30"/>
                                 <constraints>
@@ -1247,6 +1255,8 @@
                         <constraints>
                             <constraint firstItem="VaE-lQ-bM1" firstAttribute="top" secondItem="0o3-7D-3fF" secondAttribute="bottom" constant="5" id="1P8-ri-6XQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IiJ-ni-wm0" secondAttribute="trailing" constant="-19" id="1yL-WW-DZG"/>
+                            <constraint firstItem="x79-TP-7Xg" firstAttribute="top" secondItem="L2T-me-eSQ" secondAttribute="bottom" id="2Zm-yR-AJa"/>
+                            <constraint firstItem="L2T-me-eSQ" firstAttribute="top" secondItem="URU-8d-bXu" secondAttribute="bottom" id="6S1-1y-5c8"/>
                             <constraint firstItem="rFQ-QV-6fm" firstAttribute="top" secondItem="URU-8d-bXu" secondAttribute="bottom" constant="20" id="6df-oj-7nY"/>
                             <constraint firstItem="IiJ-ni-wm0" firstAttribute="leading" secondItem="WJI-7u-Neg" secondAttribute="leadingMargin" constant="-21" id="7Y2-1w-VFm"/>
                             <constraint firstItem="0o3-7D-3fF" firstAttribute="centerX" secondItem="WJI-7u-Neg" secondAttribute="centerX" id="ASM-xE-d9C"/>
@@ -1262,8 +1272,10 @@
                             <constraint firstItem="L5s-uX-nMf" firstAttribute="top" secondItem="0o3-7D-3fF" secondAttribute="bottom" constant="3" id="P2r-PG-3Ep"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ODs-G6-ef4" secondAttribute="trailing" constant="-20" id="Sho-Vd-w8E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L5s-uX-nMf" secondAttribute="trailing" constant="-20" id="XqW-tO-A8H"/>
+                            <constraint firstItem="L2T-me-eSQ" firstAttribute="leading" secondItem="WJI-7u-Neg" secondAttribute="leadingMargin" constant="-20" id="aFS-Hn-1Ds"/>
                             <constraint firstItem="mUA-Ne-oYs" firstAttribute="top" secondItem="URU-8d-bXu" secondAttribute="bottom" constant="4" id="ado-JD-Adu"/>
                             <constraint firstItem="Cks-IW-DcF" firstAttribute="width" secondItem="5Xo-YZ-oBY" secondAttribute="width" id="beK-9A-5IX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2T-me-eSQ" secondAttribute="trailing" constant="-20" id="dB1-PQ-zbd"/>
                             <constraint firstItem="mUA-Ne-oYs" firstAttribute="centerX" secondItem="WJI-7u-Neg" secondAttribute="centerX" id="dGK-5T-KAG"/>
                             <constraint firstItem="VaE-lQ-bM1" firstAttribute="centerX" secondItem="WJI-7u-Neg" secondAttribute="centerX" id="fS1-By-grL"/>
                             <constraint firstItem="ODs-G6-ef4" firstAttribute="leading" secondItem="WJI-7u-Neg" secondAttribute="leadingMargin" constant="-20" id="iCL-hq-ccq"/>

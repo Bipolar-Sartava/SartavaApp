@@ -48,13 +48,16 @@
 		3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */; };
 		3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */; };
 		3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7A73F1C4D400400012326 /* LoginViewController.swift */; };
-		3EF801431C57B4880036EDC9 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF801421C57B4880036EDC9 /* Base.swift */; };
 		3EF801471C57D8D50036EDC9 /* ChangeLanguage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */; };
 		3EFA28E51C4ABBE6007BA729 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E41C4ABBE6007BA729 /* Accounts.framework */; };
 		3EFA28E71C4ABBED007BA729 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E61C4ABBED007BA729 /* Social.framework */; };
 		3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */; };
 		3EFC7F401C5550330070FB6B /* jeep.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFC7F3F1C5550330070FB6B /* jeep.png */; };
 		3EFC7F441C56641C0070FB6B /* SearchFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */; };
+		3EFC7FC31C5C2BA9008DBD54 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC21C5C2BA4008DBD54 /* Station.swift */; };
+		3EFC7FC51C5C2FFC008DBD54 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */; };
+		3EFC7FC71C5C314A008DBD54 /* Seaport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC61C5C314A008DBD54 /* Seaport.swift */; };
+		605312E9E600BDFE7B993D57 /* Pods_Sartavahackaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */; };
 		705EA1381C49B9850043C504 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705EA1371C49B9850043C504 /* Cell.swift */; };
 		709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D6FE11C484D4C0095F47B /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sartavahackaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToUsuallyPeopleViewController.swift; sourceTree = "<group>"; };
 		25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToWorkingManViewController.swift; sourceTree = "<group>"; };
 		25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneToWorkingManViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		25D006211C4A89D600F66A02 /* EyeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EyeIcon.png; sourceTree = SOURCE_ROOT; };
 		25D006221C4A89D600F66A02 /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
 		25D006231C4A89D600F66A02 /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
+		385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sartavahackaton.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton.release.xcconfig"; sourceTree = "<group>"; };
 		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -126,13 +131,16 @@
 		3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		3EF7A73F1C4D400400012326 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3EF801421C57B4880036EDC9 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangeLanguage.png; sourceTree = "<group>"; };
 		3EFA28E41C4ABBE6007BA729 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3EFA28E61C4ABBED007BA729 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneUsualyViewController.swift; sourceTree = "<group>"; };
 		3EFC7F3F1C5550330070FB6B /* jeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeep.png; sourceTree = "<group>"; };
 		3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFinalViewController.swift; sourceTree = "<group>"; };
+		3EFC7FC21C5C2BA4008DBD54 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		3EFC7FC61C5C314A008DBD54 /* Seaport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seaport.swift; sourceTree = "<group>"; };
+		4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sartavahackaton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton.debug.xcconfig"; sourceTree = "<group>"; };
 		705EA1371C49B9850043C504 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		709D6FE11C484D4C0095F47B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +163,7 @@
 				3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */,
 				3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */,
 				3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */,
+				605312E9E600BDFE7B993D57 /* Pods_Sartavahackaton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +232,8 @@
 				3ED6165C1C45458400422CDC /* SartavahackatonTests */,
 				3ED616671C45458400422CDC /* SartavahackatonUITests */,
 				3ED616461C45458400422CDC /* Products */,
+				6286926CA136664E6EB2385E /* Pods */,
+				59D31F110CDD3275128C022E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,7 +250,7 @@
 		3ED616471C45458400422CDC /* Sartavahackaton */ = {
 			isa = PBXGroup;
 			children = (
-				3EF801411C57B4730036EDC9 /* Classes */,
+				3EFC7FC11C5C2AFD008DBD54 /* Classes */,
 				3E74BE3E1C4806F5004B78AB /* Pictures */,
 				3E74BE251C47E5B0004B78AB /* Parse */,
 				3EEA04E61C46B6EA0057DA32 /* ViewControllers */,
@@ -303,12 +314,31 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		3EF801411C57B4730036EDC9 /* Classes */ = {
+		3EFC7FC11C5C2AFD008DBD54 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3EF801421C57B4880036EDC9 /* Base.swift */,
+				3EFC7FC21C5C2BA4008DBD54 /* Station.swift */,
+				3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */,
+				3EFC7FC61C5C314A008DBD54 /* Seaport.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		59D31F110CDD3275128C022E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6286926CA136664E6EB2385E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */,
+				385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ED6166D1C45458400422CDC /* Build configuration list for PBXNativeTarget "Sartavahackaton" */;
 			buildPhases = (
+				D7905BAE5AC01ACFCE34E1D6 /* Check Pods Manifest.lock */,
 				3ED616411C45458400422CDC /* Sources */,
 				3ED616421C45458400422CDC /* Frameworks */,
 				3ED616431C45458400422CDC /* Resources */,
+				2C76E53CE11CFE67FA14FE1A /* Embed Pods Frameworks */,
+				F5190D3F7FC58057E8CB84BC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +487,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C76E53CE11CFE67FA14FE1A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7905BAE5AC01ACFCE34E1D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5190D3F7FC58057E8CB84BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3ED616411C45458400422CDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -465,12 +546,14 @@
 				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
 				25B270581C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift in Sources */,
 				25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */,
+				3EFC7FC71C5C314A008DBD54 /* Seaport.swift in Sources */,
 				3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */,
 				25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */,
-				3EF801431C57B4880036EDC9 /* Base.swift in Sources */,
 				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
 				3EFC7F441C56641C0070FB6B /* SearchFinalViewController.swift in Sources */,
+				3EFC7FC31C5C2BA9008DBD54 /* Station.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
+				3EFC7FC51C5C2FFC008DBD54 /* Airport.swift in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
 				3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */,
 				3EF106211C58EF51005EFE2A /* MenuTableViewController.swift in Sources */,
@@ -616,6 +699,7 @@
 		};
 		3ED6166E1C45458400422CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -638,6 +722,7 @@
 		};
 		3ED6166F1C45458400422CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
