@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1053,6 +1052,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="3Gl-Xb-VZ6" secondAttribute="trailing" id="kfV-S7-fEZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rB5-D6-ij2" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="AtC-rz-NU2"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QgV-3R-4Cw">
                                         <rect key="frame" x="0.0" y="308" width="600" height="44"/>
@@ -2039,6 +2041,86 @@
             </objects>
             <point key="canvasLocation" x="932" y="3590"/>
         </scene>
+        <!--Edit Profile-->
+        <scene sceneID="mIu-Y1-dnQ">
+            <objects>
+                <viewController title="Edit Profile" id="K2s-9E-DI2" customClass="SettingsViewController" customModule="Sartavahackaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ec-Jz-SHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ztx-FI-ItQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUc-q8-pxY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Baloons" translatesAutoresizingMaskIntoConstraints="NO" id="G2P-co-Zex">
+                                <rect key="frame" x="225" y="72" width="151" height="120"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVA-0t-JEX">
+                                <rect key="frame" x="285" y="200" width="30" height="30"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="EditPicBtn:" destination="K2s-9E-DI2" eventType="touchUpInside" id="8ko-aD-hYg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-XR-ZPo">
+                                <rect key="frame" x="195" y="276" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHv-yE-3dM">
+                                <rect key="frame" x="195" y="314" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trP-fo-hir">
+                                <rect key="frame" x="195" y="352" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-uw-aMm">
+                                <rect key="frame" x="364" y="390" width="123" height="30"/>
+                                <state key="normal" title="Change Password"/>
+                                <connections>
+                                    <action selector="changepass:" destination="K2s-9E-DI2" eventType="touchUpInside" id="cmy-zK-iyQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-qy-8ZX">
+                                <rect key="frame" x="146" y="390" width="94" height="30"/>
+                                <state key="normal" title="Change Email"/>
+                                <connections>
+                                    <action selector="changeemail:" destination="K2s-9E-DI2" eventType="touchUpInside" id="Wyr-G0-oek"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-QT-fMX">
+                                <rect key="frame" x="195" y="238" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Your Profile" id="OVM-0W-rYc">
+                        <barButtonItem key="leftBarButtonItem" image="Menu_white" id="40P-QY-4ml"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="JDc-62-Jhm">
+                            <connections>
+                                <action selector="btndone:" destination="K2s-9E-DI2" id="0ub-hG-EfW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnMenu" destination="40P-QY-4ml" id="BIa-Jb-Wu5"/>
+                        <outlet property="profileimg" destination="G2P-co-Zex" id="WP7-mG-Mid"/>
+                        <outlet property="txtchange1" destination="uHv-yE-3dM" id="nWR-MC-sxA"/>
+                        <outlet property="txtchange2" destination="trP-fo-hir" id="vPe-Ye-LAR"/>
+                        <outlet property="txtname" destination="bvc-QT-fMX" id="7lQ-3t-nYx"/>
+                        <outlet property="txtusername" destination="c5B-XR-ZPo" id="T4a-9N-5vo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvE-gF-BFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="4244"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2jh-h1-4Fl">
             <objects>
@@ -2301,6 +2383,24 @@
             </objects>
             <point key="canvasLocation" x="168" y="3590"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="89P-7V-Dh3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rB5-D6-ij2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eUL-hv-xUa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K2s-9E-DI2" kind="relationship" relationship="rootViewController" id="oAk-jY-7eR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSc-dR-kSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="4244"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Arrow.png" width="32" height="32"/>
@@ -2316,7 +2416,7 @@
         <image name="jeep" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xj6-n5-Fsb"/>
         <segue reference="0C6-Xa-HX5"/>
+        <segue reference="xj6-n5-Fsb"/>
     </inferredMetricsTieBreakers>
 </document>
