@@ -11,6 +11,10 @@ import Parse
 
 class RegisterOneUsualyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var LastName: UITextField!
+    @IBOutlet weak var FirstName: UITextField!
+    @IBOutlet weak var ChoosingYourPicture: UIButton!
+    @IBOutlet weak var FirstNameAndLast: UILabel!
     @IBOutlet weak var fNameTF: UITextField!
     @IBOutlet weak var lNameTF: UITextField!
     @IBOutlet weak var userProfilePic: UIImageView!
@@ -66,5 +70,21 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
         userProfilePic.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    func UserUseEnglish() {
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }

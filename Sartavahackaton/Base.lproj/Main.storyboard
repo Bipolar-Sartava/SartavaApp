@@ -842,6 +842,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="ChoosingYourPicture" destination="hcw-JP-Xas" id="6Vw-kn-JMY"/>
+                        <outlet property="FirstName" destination="ggX-XP-EiE" id="gwF-4j-fcJ"/>
+                        <outlet property="FirstNameAndLast" destination="80R-vZ-Tob" id="dtJ-Jr-sCj"/>
+                        <outlet property="LastName" destination="pEm-gl-MJc" id="kCU-ZV-7MQ"/>
                         <outlet property="fNameTF" destination="ggX-XP-EiE" id="VVA-dg-drY"/>
                         <outlet property="lNameTF" destination="pEm-gl-MJc" id="H17-1k-Rmf"/>
                         <outlet property="userProfilePic" destination="AgD-SM-hkv" id="0d2-61-L6y"/>
