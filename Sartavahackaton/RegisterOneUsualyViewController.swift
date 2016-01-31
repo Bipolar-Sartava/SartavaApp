@@ -15,8 +15,7 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
     @IBOutlet weak var FirstName: UITextField!
     @IBOutlet weak var ChoosingYourPicture: UIButton!
     @IBOutlet weak var FirstNameAndLast: UILabel!
-    @IBOutlet weak var fNameTF: UITextField!
-    @IBOutlet weak var lNameTF: UITextField!
+
     @IBOutlet weak var userProfilePic: UIImageView!
     
     override func viewDidLoad() {
@@ -72,19 +71,12 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     func UserUseEnglish() {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        OutletShowTrips.setTitle("Group Trips", forState: UIControlState.Normal)
+      LastName.setTitle("Last Name", forState: UIControlState.Normal)
+        FirstName.setTitle("First Name", forState: UIControlState.Normal)
+        ChoosingYourPicture.setTitle("Choosing Your Picture", forState: UIControlState.Normal)
+        FirstNameAndLast.setTitle("profile information", forState: UIControlState.Normal)
+        LastName.titleLabel?.textAlignment = .Left
+        FirstName.titleLabel?.textAlignment = .Left
     }
 }
