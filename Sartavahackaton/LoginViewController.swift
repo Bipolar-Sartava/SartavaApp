@@ -21,10 +21,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPassOutlet: UIButton!
 
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        Shared.downloadAllAttractions()
     }
     
     override func viewDidAppear(animated: Bool) {
