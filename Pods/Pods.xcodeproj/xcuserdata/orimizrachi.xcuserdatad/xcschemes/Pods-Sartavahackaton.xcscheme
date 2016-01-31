@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A015899904A2F2B938AF2E6F'
+               BlueprintIdentifier = '1C7598CA3838D941F0A8C1C4'
                BlueprintName = 'Pods-Sartavahackaton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Sartavahackaton.framework'>

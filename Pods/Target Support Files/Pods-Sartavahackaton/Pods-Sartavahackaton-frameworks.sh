@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Sartavahackaton/Mantle.framework"
+  install_framework "Pods-Sartavahackaton/Alamofire.framework"
+  install_framework "Pods-Sartavahackaton/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Sartavahackaton/Mantle.framework"
+  install_framework "Pods-Sartavahackaton/Alamofire.framework"
+  install_framework "Pods-Sartavahackaton/SwiftyJSON.framework"
 fi
