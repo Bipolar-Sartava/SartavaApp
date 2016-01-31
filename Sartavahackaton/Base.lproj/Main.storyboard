@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -260,7 +261,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="שם פרטי ומשפחה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-Xk-i6k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="פרטי פרופיל" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-Xk-i6k">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
                                 <color key="backgroundColor" red="0.1472159787" green="0.34613279819999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
@@ -352,6 +353,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ChoosingYourPicture" destination="3hx-lc-Bv8" id="Xik-vT-gwv"/>
+                        <outlet property="ProfileInformation" destination="PNb-Xk-i6k" id="CIC-Uv-mbx"/>
                         <outlet property="fNameTF" destination="Kj4-dd-pZk" id="Ikz-uq-f4F"/>
                         <outlet property="lNameTF" destination="A8o-xS-D26" id="IJz-DD-nk3"/>
                         <outlet property="profilePic" destination="xc0-um-UY0" id="goe-Wf-qRE"/>
@@ -774,7 +777,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="שם פרטי ומשפחה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80R-vZ-Tob">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="פרטי פרופיל" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80R-vZ-Tob">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
                                 <color key="backgroundColor" red="0.1472159787" green="0.34613279819999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
@@ -841,8 +844,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="fNameTF" destination="ggX-XP-EiE" id="VVA-dg-drY"/>
-                        <outlet property="lNameTF" destination="pEm-gl-MJc" id="H17-1k-Rmf"/>
+                        <outlet property="ChoosingYourPicture" destination="hcw-JP-Xas" id="6Vw-kn-JMY"/>
+                        <outlet property="FirstName" destination="ggX-XP-EiE" id="gwF-4j-fcJ"/>
+                        <outlet property="FirstNameAndLast" destination="80R-vZ-Tob" id="dtJ-Jr-sCj"/>
+                        <outlet property="LastName" destination="pEm-gl-MJc" id="kCU-ZV-7MQ"/>
                         <outlet property="userProfilePic" destination="AgD-SM-hkv" id="0d2-61-L6y"/>
                     </connections>
                 </viewController>
