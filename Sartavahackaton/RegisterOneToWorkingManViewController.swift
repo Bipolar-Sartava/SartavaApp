@@ -10,11 +10,9 @@ import UIKit
 
 class RegisterOneToWorkingManViewController: UIViewController {
 
-    @IBOutlet weak var ProfileInformation: UILabel!
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var fNameTF: UITextField!
     @IBOutlet weak var lNameTF: UITextField!
-    @IBOutlet weak var ChoosingYourPicture: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,18 +54,5 @@ class RegisterOneToWorkingManViewController: UIViewController {
     @IBAction func btnChangeProfliePic(sender: UIButton) {
         
     }
-func EnglishToHebrew()
-{
-    ProfileInformation.setTitle("Profile Information", forState: UIControlState.Normal)
-    fNameTF.setTitle("First Name", forState: UIControlState.Normal)
-    lNameTF.setTitle("Last Name", forState: UIControlState.Normal)
-    ChoosingYourPicture.setTitle("Choosing You'r Picture", forState: UIControlState.Normal)
-    fNameTF.titleLabel?.textAlignment = .Left
-    lNameTF.titleLabel?.textAlignment = .Left
-    
-    
-    
-    
-    
-    }
+
 }
