@@ -48,6 +48,9 @@
 		3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E71C46B7280057DA32 /* HomeViewController.swift */; };
 		3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */; };
 		3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */; };
+		3EF612711C5F812300C5E017 /* SearchMiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF612701C5F812300C5E017 /* SearchMiddleViewController.swift */; };
+		3EF612731C5F949100C5E017 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF612721C5F949100C5E017 /* TripsViewController.swift */; };
+		3EF612751C5FA01B00C5E017 /* FinalTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF612741C5FA01B00C5E017 /* FinalTripViewController.swift */; };
 		3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7A73F1C4D400400012326 /* LoginViewController.swift */; };
 		3EF801471C57D8D50036EDC9 /* ChangeLanguage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */; };
 		3EF8D00F1C5EA72800E5CDBF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF8D00E1C5EA72800E5CDBF /* Utils.swift */; };
@@ -136,6 +139,9 @@
 		3EEA04E71C46B7280057DA32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		3EF612701C5F812300C5E017 /* SearchMiddleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMiddleViewController.swift; sourceTree = "<group>"; };
+		3EF612721C5F949100C5E017 /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		3EF612741C5FA01B00C5E017 /* FinalTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalTripViewController.swift; sourceTree = "<group>"; };
 		3EF7A73F1C4D400400012326 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangeLanguage.png; sourceTree = "<group>"; };
 		3EF8D00E1C5EA72800E5CDBF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -321,6 +327,9 @@
 				3EF7A73F1C4D400400012326 /* LoginViewController.swift */,
 				3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */,
 				0F8552DE1C5BAB0800621045 /* SettingsViewController.swift */,
+				3EF612701C5F812300C5E017 /* SearchMiddleViewController.swift */,
+				3EF612721C5F949100C5E017 /* TripsViewController.swift */,
+				3EF612741C5FA01B00C5E017 /* FinalTripViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -573,12 +582,15 @@
 				3EFC8BF91C5E9F3100B65DB1 /* Attractions.swift in Sources */,
 				3EFC8BFC1C5E9F3C00B65DB1 /* Attraction.swift in Sources */,
 				3EFC7FC31C5C2BA9008DBD54 /* Station.swift in Sources */,
+				3EF612711C5F812300C5E017 /* SearchMiddleViewController.swift in Sources */,
 				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
+				3EF612731C5F949100C5E017 /* TripsViewController.swift in Sources */,
 				3EFC7FC51C5C2FFC008DBD54 /* Airport.swift in Sources */,
 				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
 				3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */,
 				705EA1381C49B9850043C504 /* Cell.swift in Sources */,
 				709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */,
+				3EF612751C5FA01B00C5E017 /* FinalTripViewController.swift in Sources */,
 				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

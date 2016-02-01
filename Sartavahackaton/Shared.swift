@@ -27,6 +27,10 @@ class Shared: NSObject {
                         let newAttraction = Attraction(nattributeTypeId: dict!["_id"]!.stringValue, ncustomValue: (dict!["CustomValue"]?.stringValue)!, ndisplayOrder: (dict!["DisplayOrder"]?.intValue)!, nfullDescription: (dict!["FullDescription"]?.stringValue)!, nname: (dict!["name"]?.stringValue)!, nproductId: (dict!["ProductId"]?.stringValue)!, nshortdescription: (dict!["Shortdescription"]?.stringValue)!, nspecificationAttributeName:(dict!["SpecificationAttributeName"]?.stringValue)!, nspecificationAttributeOptionName: (dict!["SpecificationAttributeName"]?.stringValue)!)
                         attractions.addAttraction(newAttraction)
                     }
+                    
+                    for var i = 0; i<attractions.attractions.count; i++ {
+                        print(attractions.attractions[i].name)
+                    }
                     print(attractions.attractions.count)
                 }
         }

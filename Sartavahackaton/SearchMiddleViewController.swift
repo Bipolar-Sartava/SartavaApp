@@ -1,23 +1,19 @@
 //
-//  SearchFinalViewController.swift
-//  Sartavahackaton
+//  SearchMiddleViewController.swift
+//  Sartaba
 //
-//  Created by ori mizrachi on 1/25/16.
+//  Created by ori mizrachi on 2/1/16.
 //  Copyright © 2016 Bipolar. All rights reserved.
 //
 
 import UIKit
 
-class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchMiddleViewController: UIViewController {
 
     @IBOutlet weak var btnMenu: UIBarButtonItem!
-    @IBOutlet weak var ShowInfoTBL: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ShowInfoTBL.delegate = self
-        ShowInfoTBL.dataSource = self
-        
         //Menu Btn Stuff
         if self.revealViewController() != nil {
             btnMenu.target = self.revealViewController()
@@ -38,28 +34,6 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
-        
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let ident: String = "identifier"
-        
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(ident) as UITableViewCell?
-        
-        if cell ==  nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ident)
-        }
-        
-        cell?.textLabel?.text = "\(indexPath.row)"
-        return cell!
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 65
     }
 
 

@@ -10,7 +10,6 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    @IBOutlet weak var AttCatView: UIView!
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view1: UIView!
@@ -38,10 +37,7 @@ class SearchViewController: UIViewController {
         navBar?.tintColor = UIColor.whiteColor()
         
         //Buttons
-        outletAtt.titleLabel?.textAlignment = .Right
-        outletHotels.titleLabel?.textAlignment = .Right
-        outletTrips.titleLabel?.textAlignment = .Right
-        
+12341234
         //Blur
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -60,28 +56,5 @@ class SearchViewController: UIViewController {
         view3.layer.zPosition = 3
         blurEffectView.alpha = 0.9
         blurEffectView.userInteractionEnabled = false
-    }
-    
-    @IBAction func AttChosen(sender: UIButton) {
-        AttCatView.hidden = false
-        AttCatView.layer.zPosition = 3
-        bgImg.layer.zPosition = 1
-        outletAtt.hidden = true
-        outletHotels.hidden = true
-        outletTrips.hidden = true
-        searchBar.hidden = true
-        view1.hidden = true
-        view2.hidden = true
-        view3.hidden = true
-        
-        self.navigationController?.navigationBarHidden = true
-    }
-    
-    @IBAction func TripsChosen(sender: UIButton) {
-
-    }
-    
-    @IBAction func HotelSchosen(sender: UIButton) {
-
     }
 }
