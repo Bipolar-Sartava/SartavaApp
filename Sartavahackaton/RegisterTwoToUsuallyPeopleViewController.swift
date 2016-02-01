@@ -90,4 +90,12 @@ class RegisterTwoToUsuallyPeopleViewController: UIViewController {
     @IBAction func btnCountinue(sender: AnyObject) {
         self.SignUp()
     }
+    func HebrewToEnglish(){
+        userNameTF.placeholder = "User Name"
+        passTF.placeholder = "Password"
+        emailTF.placeholder = "Email"
+        secondPassTF.placeholder = "Repeat Password"
+        
+
+            }
 }
