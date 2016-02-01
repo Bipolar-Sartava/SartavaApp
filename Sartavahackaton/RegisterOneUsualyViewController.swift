@@ -67,4 +67,12 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    func UserUseEnglish() {
+        fNameTF.setTitle("First Name", forState: UIControlState.Normal)
+        lNameTF.setTitle("Last Name", forState: UIControlState.Normal)
+        userProfilePic.setTitle("Choose Your Picture", forState: UIControlState.Normal)
+        fNameTF.titleLabel?.textAlignment = .Left
+    }
+    
+    
 }

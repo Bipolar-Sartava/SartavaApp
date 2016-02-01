@@ -54,5 +54,9 @@ class RegisterOneToWorkingManViewController: UIViewController {
     @IBAction func btnChangeProfliePic(sender: UIButton) {
         
     }
-
+    func UserUseEnglish() {
+        fNameTF.placeholder = "First Name"
+        fNameTF.textAlignment = .Left
+        
+    }
 }
