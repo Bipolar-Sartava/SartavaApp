@@ -283,14 +283,6 @@
                                     <constraint firstAttribute="width" constant="151" id="xLb-aU-vCf"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-lc-Bv8">
-                                <rect key="frame" x="225" y="253" width="151" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="לחץ כאן להוספת תמונה!"/>
-                                <connections>
-                                    <action selector="btnChangeProfliePic:" destination="skg-uI-cPe" eventType="touchUpInside" id="R40-iO-KTc"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAh-1w-y5R">
                                 <rect key="frame" x="225" y="334" width="173" height="1"/>
                                 <color key="backgroundColor" red="0.1472159787" green="0.34613279819999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -325,6 +317,14 @@
                                     <segue destination="UXL-4z-MRi" kind="modal" id="JJJ-sc-Uid"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-lc-Bv8">
+                                <rect key="frame" x="225" y="253" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="לחץ כאן להוספת תמונה!"/>
+                                <connections>
+                                    <action selector="btnChangeProfliePic:" destination="skg-uI-cPe" eventType="touchUpInside" id="R40-iO-KTc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -353,6 +353,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ChoosingProfile" destination="3hx-lc-Bv8" id="D1t-F5-c4P"/>
+                        <outlet property="FirstAndLastName" destination="PNb-Xk-i6k" id="i1J-7A-MyX"/>
                         <outlet property="fNameTF" destination="Kj4-dd-pZk" id="Ikz-uq-f4F"/>
                         <outlet property="lNameTF" destination="A8o-xS-D26" id="IJz-DD-nk3"/>
                         <outlet property="profilePic" destination="xc0-um-UY0" id="goe-Wf-qRE"/>
@@ -842,6 +844,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="ChoosingPicture" destination="hcw-JP-Xas" id="z0G-7e-48G"/>
+                        <outlet property="FirstAndLastName" destination="80R-vZ-Tob" id="8WT-vi-EVi"/>
                         <outlet property="fNameTF" destination="ggX-XP-EiE" id="VVA-dg-drY"/>
                         <outlet property="lNameTF" destination="pEm-gl-MJc" id="H17-1k-Rmf"/>
                         <outlet property="userProfilePic" destination="AgD-SM-hkv" id="0d2-61-L6y"/>
