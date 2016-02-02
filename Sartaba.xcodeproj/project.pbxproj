@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8552DF1C5BAB0800621045 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8552DE1C5BAB0800621045 /* SettingsViewController.swift */; };
+		25B270521C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */; };
+		25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */; };
+		25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */; };
+		25B270581C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */; };
+		25B2705A1C4A99E6001839B1 /* CheckMarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B270591C4A99E6001839B1 /* CheckMarkIcon.png */; };
+		25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006211C4A89D600F66A02 /* EyeIcon.png */; };
+		25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006221C4A89D600F66A02 /* UsuallyManIcon.png */; };
+		25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D006231C4A89D600F66A02 /* WorkingManIcon.png */; };
+		3E0508061C5D10340099926C /* Map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E0508051C5D10340099926C /* Map.jpg */; };
+		3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE261C47E5DF004B78AB /* Bolts.framework */; };
+		3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE271C47E5DF004B78AB /* Parse.framework */; };
+		3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */; };
+		3E74BE2D1C47E6E0004B78AB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */; };
+		3E74BE2F1C47E6E8004B78AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */; };
+		3E74BE311C47E6EE004B78AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE301C47E6EE004B78AB /* QuartzCore.framework */; };
+		3E74BE331C47E6F8004B78AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE321C47E6F8004B78AB /* Security.framework */; };
+		3E74BE351C47E6FD004B78AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE341C47E6FD004B78AB /* StoreKit.framework */; };
+		3E74BE371C47E704004B78AB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE361C47E704004B78AB /* SystemConfiguration.framework */; };
+		3E74BE391C47E708004B78AB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE381C47E708004B78AB /* libz.tbd */; };
+		3E74BE3B1C47E70E004B78AB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */; };
+		3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */; };
+		3E74BE431C480717004B78AB /* Baloons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE3F1C480716004B78AB /* Baloons.jpg */; };
+		3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE401C480716004B78AB /* Plains 2.jpg */; };
+		3E74BE461C480717004B78AB /* Tree3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E74BE421C480716004B78AB /* Tree3.jpg */; };
+		3E74BE481C480865004B78AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E74BE471C480865004B78AB /* MapViewController.swift */; };
+		3E8FCBF81C4AD3E700712573 /* Menu_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FCBF61C4AD3E700712573 /* Menu_white.png */; };
+		3E8FCBF91C4AD3E700712573 /* Sartaba_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */; };
+		3ECB41431C4C150600F6E4F9 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41411C4C150500F6E4F9 /* Arrow.png */; };
+		3ECB41441C4C150600F6E4F9 /* ArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41421C4C150600F6E4F9 /* ArrowDown.png */; };
+		3ECB41461C4C20B000F6E4F9 /* ShukBlur.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */; };
+		3ED616491C45458400422CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616481C45458400422CDC /* AppDelegate.swift */; };
+		3ED6164E1C45458400422CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164C1C45458400422CDC /* Main.storyboard */; };
+		3ED616501C45458400422CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6164F1C45458400422CDC /* Assets.xcassets */; };
+		3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED616511C45458400422CDC /* LaunchScreen.storyboard */; };
+		3ED6165E1C45458400422CDC /* SartavahackatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6165D1C45458400422CDC /* SartavahackatonTests.swift */; };
+		3ED616691C45458400422CDC /* SartavahackatonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED616681C45458400422CDC /* SartavahackatonUITests.swift */; };
+		3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */; };
+		3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA04E71C46B7280057DA32 /* HomeViewController.swift */; };
+		3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */; };
+		3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */; };
+		3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7A73F1C4D400400012326 /* LoginViewController.swift */; };
+		3EF801471C57D8D50036EDC9 /* ChangeLanguage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */; };
+		3EF8D00F1C5EA72800E5CDBF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF8D00E1C5EA72800E5CDBF /* Utils.swift */; };
+		3EFA28E51C4ABBE6007BA729 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E41C4ABBE6007BA729 /* Accounts.framework */; };
+		3EFA28E71C4ABBED007BA729 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA28E61C4ABBED007BA729 /* Social.framework */; };
+		3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */; };
+		3EFC7F401C5550330070FB6B /* jeep.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFC7F3F1C5550330070FB6B /* jeep.png */; };
+		3EFC7F441C56641C0070FB6B /* SearchFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */; };
+		3EFC7FC31C5C2BA9008DBD54 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC21C5C2BA4008DBD54 /* Station.swift */; };
+		3EFC7FC51C5C2FFC008DBD54 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */; };
+		3EFC7FC71C5C314A008DBD54 /* Seaport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC7FC61C5C314A008DBD54 /* Seaport.swift */; };
+		3EFC8BF91C5E9F3100B65DB1 /* Attractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC8BF81C5E9F3000B65DB1 /* Attractions.swift */; };
+		3EFC8BFC1C5E9F3C00B65DB1 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC8BFA1C5E9F3C00B65DB1 /* Attraction.swift */; };
+		3EFC8BFD1C5E9F3C00B65DB1 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC8BFB1C5E9F3C00B65DB1 /* Shared.swift */; };
+		605312E9E600BDFE7B993D57 /* Pods_Sartavahackaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */; };
+		705EA1381C49B9850043C504 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705EA1371C49B9850043C504 /* Cell.swift */; };
+		709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D6FE11C484D4C0095F47B /* CollectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ED6165A1C45458400422CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED6163D1C45458400422CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED616441C45458400422CDC;
+			remoteInfo = Sartavahackaton;
+		};
+		3ED616651C45458400422CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED6163D1C45458400422CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED616441C45458400422CDC;
+			remoteInfo = Sartavahackaton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F8552DE1C5BAB0800621045 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sartavahackaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToUsuallyPeopleViewController.swift; sourceTree = "<group>"; };
+		25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoToWorkingManViewController.swift; sourceTree = "<group>"; };
+		25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneToWorkingManViewController.swift; sourceTree = "<group>"; };
+		25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseWorkingManOrUsuallyManViewController.swift; sourceTree = "<group>"; };
+		25B270591C4A99E6001839B1 /* CheckMarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMarkIcon.png; sourceTree = SOURCE_ROOT; };
+		25D006211C4A89D600F66A02 /* EyeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EyeIcon.png; sourceTree = SOURCE_ROOT; };
+		25D006221C4A89D600F66A02 /* UsuallyManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UsuallyManIcon.png; sourceTree = SOURCE_ROOT; };
+		25D006231C4A89D600F66A02 /* WorkingManIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkingManIcon.png; sourceTree = SOURCE_ROOT; };
+		385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sartavahackaton.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton.release.xcconfig"; sourceTree = "<group>"; };
+		3E0508051C5D10340099926C /* Map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Map.jpg; sourceTree = "<group>"; };
+		3E74BE261C47E5DF004B78AB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		3E74BE271C47E5DF004B78AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E74BE301C47E6EE004B78AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3E74BE321C47E6F8004B78AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3E74BE341C47E6FD004B78AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3E74BE361C47E704004B78AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3E74BE381C47E708004B78AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		3E74BE3F1C480716004B78AB /* Baloons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Baloons.jpg; sourceTree = "<group>"; };
+		3E74BE401C480716004B78AB /* Plains 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Plains 2.jpg"; sourceTree = "<group>"; };
+		3E74BE421C480716004B78AB /* Tree3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tree3.jpg; sourceTree = "<group>"; };
+		3E74BE471C480865004B78AB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3E8FCBF61C4AD3E700712573 /* Menu_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_white.png; sourceTree = "<group>"; };
+		3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sartaba_logo_white.png; sourceTree = "<group>"; };
+		3ECB41411C4C150500F6E4F9 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		3ECB41421C4C150600F6E4F9 /* ArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowDown.png; sourceTree = "<group>"; };
+		3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShukBlur.png; sourceTree = "<group>"; };
+		3ED616451C45458400422CDC /* Sartavahackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sartavahackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED616481C45458400422CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ED6164D1C45458400422CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ED6164F1C45458400422CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ED616521C45458400422CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ED616541C45458400422CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED616591C45458400422CDC /* SartavahackatonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SartavahackatonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED6165D1C45458400422CDC /* SartavahackatonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SartavahackatonTests.swift; sourceTree = "<group>"; };
+		3ED6165F1C45458400422CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED616641C45458400422CDC /* SartavahackatonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SartavahackatonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED616681C45458400422CDC /* SartavahackatonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SartavahackatonUITests.swift; sourceTree = "<group>"; };
+		3ED6166A1C45458400422CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEA04E21C46B39B0057DA32 /* Sartavahackaton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sartavahackaton-Bridging-Header.h"; sourceTree = "<group>"; };
+		3EEA04E31C46B39D0057DA32 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3EEA04E71C46B7280057DA32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		3EF7A73F1C4D400400012326 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangeLanguage.png; sourceTree = "<group>"; };
+		3EF8D00E1C5EA72800E5CDBF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3EFA28E41C4ABBE6007BA729 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3EFA28E61C4ABBED007BA729 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOneUsualyViewController.swift; sourceTree = "<group>"; };
+		3EFC7F3F1C5550330070FB6B /* jeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeep.png; sourceTree = "<group>"; };
+		3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFinalViewController.swift; sourceTree = "<group>"; };
+		3EFC7FC21C5C2BA4008DBD54 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		3EFC7FC61C5C314A008DBD54 /* Seaport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seaport.swift; sourceTree = "<group>"; };
+		3EFC8BF81C5E9F3000B65DB1 /* Attractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attractions.swift; sourceTree = "<group>"; };
+		3EFC8BFA1C5E9F3C00B65DB1 /* Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		3EFC8BFB1C5E9F3C00B65DB1 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sartavahackaton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton.debug.xcconfig"; sourceTree = "<group>"; };
+		705EA1371C49B9850043C504 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		709D6FE11C484D4C0095F47B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ED616421C45458400422CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EFA28E71C4ABBED007BA729 /* Social.framework in Frameworks */,
+				3EFA28E51C4ABBE6007BA729 /* Accounts.framework in Frameworks */,
+				3E74BE3B1C47E70E004B78AB /* libsqlite3.tbd in Frameworks */,
+				3E74BE391C47E708004B78AB /* libz.tbd in Frameworks */,
+				3E74BE371C47E704004B78AB /* SystemConfiguration.framework in Frameworks */,
+				3E74BE351C47E6FD004B78AB /* StoreKit.framework in Frameworks */,
+				3E74BE331C47E6F8004B78AB /* Security.framework in Frameworks */,
+				3E74BE311C47E6EE004B78AB /* QuartzCore.framework in Frameworks */,
+				3E74BE2F1C47E6E8004B78AB /* CoreGraphics.framework in Frameworks */,
+				3E74BE2D1C47E6E0004B78AB /* CFNetwork.framework in Frameworks */,
+				3E74BE2B1C47E6D9004B78AB /* AudioToolbox.framework in Frameworks */,
+				3E74BE291C47E5DF004B78AB /* Parse.framework in Frameworks */,
+				3E74BE281C47E5DF004B78AB /* Bolts.framework in Frameworks */,
+				605312E9E600BDFE7B993D57 /* Pods_Sartavahackaton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616561C45458400422CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616611C45458400422CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E74BE251C47E5B0004B78AB /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				3EFA28E41C4ABBE6007BA729 /* Accounts.framework */,
+				3EFA28E61C4ABBED007BA729 /* Social.framework */,
+				3E74BE3A1C47E70E004B78AB /* libsqlite3.tbd */,
+				3E74BE381C47E708004B78AB /* libz.tbd */,
+				3E74BE361C47E704004B78AB /* SystemConfiguration.framework */,
+				3E74BE341C47E6FD004B78AB /* StoreKit.framework */,
+				3E74BE321C47E6F8004B78AB /* Security.framework */,
+				3E74BE301C47E6EE004B78AB /* QuartzCore.framework */,
+				3E74BE2E1C47E6E8004B78AB /* CoreGraphics.framework */,
+				3E74BE2C1C47E6E0004B78AB /* CFNetwork.framework */,
+				3E74BE2A1C47E6D9004B78AB /* AudioToolbox.framework */,
+				3E74BE261C47E5DF004B78AB /* Bolts.framework */,
+				3E74BE271C47E5DF004B78AB /* Parse.framework */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		3E74BE3E1C4806F5004B78AB /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				3EFC7F3F1C5550330070FB6B /* jeep.png */,
+				3ECB41451C4C20AF00F6E4F9 /* ShukBlur.png */,
+				3ECB41411C4C150500F6E4F9 /* Arrow.png */,
+				3E0508051C5D10340099926C /* Map.jpg */,
+				3EF801461C57D8D50036EDC9 /* ChangeLanguage.png */,
+				3ECB41421C4C150600F6E4F9 /* ArrowDown.png */,
+				3E8FCBF61C4AD3E700712573 /* Menu_white.png */,
+				3E8FCBF71C4AD3E700712573 /* Sartaba_logo_white.png */,
+				25B270591C4A99E6001839B1 /* CheckMarkIcon.png */,
+				25D006211C4A89D600F66A02 /* EyeIcon.png */,
+				25D006221C4A89D600F66A02 /* UsuallyManIcon.png */,
+				25D006231C4A89D600F66A02 /* WorkingManIcon.png */,
+				3E74BE3F1C480716004B78AB /* Baloons.jpg */,
+				3E74BE401C480716004B78AB /* Plains 2.jpg */,
+				3E74BE421C480716004B78AB /* Tree3.jpg */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		3ED6163C1C45458400422CDC = {
+			isa = PBXGroup;
+			children = (
+				3ED616471C45458400422CDC /* Sartavahackaton */,
+				3ED6165C1C45458400422CDC /* SartavahackatonTests */,
+				3ED616671C45458400422CDC /* SartavahackatonUITests */,
+				3ED616461C45458400422CDC /* Products */,
+				6286926CA136664E6EB2385E /* Pods */,
+				59D31F110CDD3275128C022E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3ED616461C45458400422CDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ED616451C45458400422CDC /* Sartavahackaton.app */,
+				3ED616591C45458400422CDC /* SartavahackatonTests.xctest */,
+				3ED616641C45458400422CDC /* SartavahackatonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ED616471C45458400422CDC /* Sartavahackaton */ = {
+			isa = PBXGroup;
+			children = (
+				3EFC7FC11C5C2AFD008DBD54 /* Classes */,
+				3E74BE3E1C4806F5004B78AB /* Pictures */,
+				3E74BE251C47E5B0004B78AB /* Parse */,
+				3EEA04E61C46B6EA0057DA32 /* ViewControllers */,
+				3ED616761C4546AE00422CDC /* SWRevealSideBar */,
+				3ED616481C45458400422CDC /* AppDelegate.swift */,
+				3ED6164C1C45458400422CDC /* Main.storyboard */,
+				3ED6164F1C45458400422CDC /* Assets.xcassets */,
+				3ED616511C45458400422CDC /* LaunchScreen.storyboard */,
+				3ED616541C45458400422CDC /* Info.plist */,
+			);
+			path = Sartavahackaton;
+			sourceTree = "<group>";
+		};
+		3ED6165C1C45458400422CDC /* SartavahackatonTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED6165D1C45458400422CDC /* SartavahackatonTests.swift */,
+				3ED6165F1C45458400422CDC /* Info.plist */,
+			);
+			path = SartavahackatonTests;
+			sourceTree = "<group>";
+		};
+		3ED616671C45458400422CDC /* SartavahackatonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED616681C45458400422CDC /* SartavahackatonUITests.swift */,
+				3ED6166A1C45458400422CDC /* Info.plist */,
+			);
+			path = SartavahackatonUITests;
+			sourceTree = "<group>";
+		};
+		3ED616761C4546AE00422CDC /* SWRevealSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				3EEA04E31C46B39D0057DA32 /* SWRevealViewController.h */,
+				3EEA04E41C46B39D0057DA32 /* SWRevealViewController.m */,
+				3EEA04E21C46B39B0057DA32 /* Sartavahackaton-Bridging-Header.h */,
+			);
+			name = SWRevealSideBar;
+			sourceTree = "<group>";
+		};
+		3EEA04E61C46B6EA0057DA32 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EEA04E71C46B7280057DA32 /* HomeViewController.swift */,
+				709D6FE11C484D4C0095F47B /* CollectionViewController.swift */,
+				705EA1371C49B9850043C504 /* Cell.swift */,
+				3EF428C21C46BF7A0036CD4A /* SearchViewController.swift */,
+				3EF428C41C46BF8B0036CD4A /* WeatherViewController.swift */,
+				3E74BE3C1C47EE24004B78AB /* FavoritesViewController.swift */,
+				3E74BE471C480865004B78AB /* MapViewController.swift */,
+				25B270511C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift */,
+				25B270531C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift */,
+				25B270551C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift */,
+				25B270571C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift */,
+				3EFA28E81C4AC714007BA729 /* RegisterOneUsualyViewController.swift */,
+				3EF7A73F1C4D400400012326 /* LoginViewController.swift */,
+				3EFC7F431C56641C0070FB6B /* SearchFinalViewController.swift */,
+				0F8552DE1C5BAB0800621045 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3EFC7FC11C5C2AFD008DBD54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3EFC7FC21C5C2BA4008DBD54 /* Station.swift */,
+				3EFC7FC41C5C2FFB008DBD54 /* Airport.swift */,
+				3EFC8BF81C5E9F3000B65DB1 /* Attractions.swift */,
+				3EFC8BFA1C5E9F3C00B65DB1 /* Attraction.swift */,
+				3EFC8BFB1C5E9F3C00B65DB1 /* Shared.swift */,
+				3EFC7FC61C5C314A008DBD54 /* Seaport.swift */,
+				3EF8D00E1C5EA72800E5CDBF /* Utils.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		59D31F110CDD3275128C022E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B640021971D3689AD814F26 /* Pods_Sartavahackaton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6286926CA136664E6EB2385E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */,
+				385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ED616441C45458400422CDC /* Sartavahackaton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED6166D1C45458400422CDC /* Build configuration list for PBXNativeTarget "Sartavahackaton" */;
+			buildPhases = (
+				D7905BAE5AC01ACFCE34E1D6 /* Check Pods Manifest.lock */,
+				3ED616411C45458400422CDC /* Sources */,
+				3ED616421C45458400422CDC /* Frameworks */,
+				3ED616431C45458400422CDC /* Resources */,
+				2C76E53CE11CFE67FA14FE1A /* Embed Pods Frameworks */,
+				F5190D3F7FC58057E8CB84BC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sartavahackaton;
+			productName = Sartavahackaton;
+			productReference = 3ED616451C45458400422CDC /* Sartavahackaton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ED616581C45458400422CDC /* SartavahackatonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED616701C45458400422CDC /* Build configuration list for PBXNativeTarget "SartavahackatonTests" */;
+			buildPhases = (
+				3ED616551C45458400422CDC /* Sources */,
+				3ED616561C45458400422CDC /* Frameworks */,
+				3ED616571C45458400422CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED6165B1C45458400422CDC /* PBXTargetDependency */,
+			);
+			name = SartavahackatonTests;
+			productName = SartavahackatonTests;
+			productReference = 3ED616591C45458400422CDC /* SartavahackatonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3ED616631C45458400422CDC /* SartavahackatonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED616731C45458400422CDC /* Build configuration list for PBXNativeTarget "SartavahackatonUITests" */;
+			buildPhases = (
+				3ED616601C45458400422CDC /* Sources */,
+				3ED616611C45458400422CDC /* Frameworks */,
+				3ED616621C45458400422CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED616661C45458400422CDC /* PBXTargetDependency */,
+			);
+			name = SartavahackatonUITests;
+			productName = SartavahackatonUITests;
+			productReference = 3ED616641C45458400422CDC /* SartavahackatonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ED6163D1C45458400422CDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Bipolar;
+				TargetAttributes = {
+					3ED616441C45458400422CDC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S67SFV48QJ;
+					};
+					3ED616581C45458400422CDC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 73QN96ZXDN;
+						TestTargetID = 3ED616441C45458400422CDC;
+					};
+					3ED616631C45458400422CDC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 73QN96ZXDN;
+						TestTargetID = 3ED616441C45458400422CDC;
+					};
+				};
+			};
+			buildConfigurationList = 3ED616401C45458400422CDC /* Build configuration list for PBXProject "Sartaba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ED6163C1C45458400422CDC;
+			productRefGroup = 3ED616461C45458400422CDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ED616441C45458400422CDC /* Sartavahackaton */,
+				3ED616581C45458400422CDC /* SartavahackatonTests */,
+				3ED616631C45458400422CDC /* SartavahackatonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ED616431C45458400422CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E74BE431C480717004B78AB /* Baloons.jpg in Resources */,
+				3E74BE441C480717004B78AB /* Plains 2.jpg in Resources */,
+				25D006251C4A89D600F66A02 /* UsuallyManIcon.png in Resources */,
+				3E8FCBF91C4AD3E700712573 /* Sartaba_logo_white.png in Resources */,
+				25D006241C4A89D600F66A02 /* EyeIcon.png in Resources */,
+				25B2705A1C4A99E6001839B1 /* CheckMarkIcon.png in Resources */,
+				3E0508061C5D10340099926C /* Map.jpg in Resources */,
+				3ED616531C45458400422CDC /* LaunchScreen.storyboard in Resources */,
+				3ED616501C45458400422CDC /* Assets.xcassets in Resources */,
+				3ECB41461C4C20B000F6E4F9 /* ShukBlur.png in Resources */,
+				25D006261C4A89D600F66A02 /* WorkingManIcon.png in Resources */,
+				3ECB41431C4C150600F6E4F9 /* Arrow.png in Resources */,
+				3E74BE461C480717004B78AB /* Tree3.jpg in Resources */,
+				3ED6164E1C45458400422CDC /* Main.storyboard in Resources */,
+				3E8FCBF81C4AD3E700712573 /* Menu_white.png in Resources */,
+				3ECB41441C4C150600F6E4F9 /* ArrowDown.png in Resources */,
+				3EFC7F401C5550330070FB6B /* jeep.png in Resources */,
+				3EF801471C57D8D50036EDC9 /* ChangeLanguage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616571C45458400422CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616621C45458400422CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C76E53CE11CFE67FA14FE1A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7905BAE5AC01ACFCE34E1D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5190D3F7FC58057E8CB84BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sartavahackaton/Pods-Sartavahackaton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ED616411C45458400422CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF428C31C46BF7A0036CD4A /* SearchViewController.swift in Sources */,
+				25B270521C4A95C4001839B1 /* RegisterTwoToUsuallyPeopleViewController.swift in Sources */,
+				3EF428C51C46BF8B0036CD4A /* WeatherViewController.swift in Sources */,
+				3E74BE3D1C47EE24004B78AB /* FavoritesViewController.swift in Sources */,
+				25B270581C4A964A001839B1 /* ChooseWorkingManOrUsuallyManViewController.swift in Sources */,
+				3EF8D00F1C5EA72800E5CDBF /* Utils.swift in Sources */,
+				0F8552DF1C5BAB0800621045 /* SettingsViewController.swift in Sources */,
+				3EFC8BFD1C5E9F3C00B65DB1 /* Shared.swift in Sources */,
+				25B270561C4A9610001839B1 /* RegisterOneToWorkingManViewController.swift in Sources */,
+				3EFC7FC71C5C314A008DBD54 /* Seaport.swift in Sources */,
+				3EFA28E91C4AC714007BA729 /* RegisterOneUsualyViewController.swift in Sources */,
+				25B270541C4A95F5001839B1 /* RegisterTwoToWorkingManViewController.swift in Sources */,
+				3ED616491C45458400422CDC /* AppDelegate.swift in Sources */,
+				3EFC7F441C56641C0070FB6B /* SearchFinalViewController.swift in Sources */,
+				3EFC8BF91C5E9F3100B65DB1 /* Attractions.swift in Sources */,
+				3EFC8BFC1C5E9F3C00B65DB1 /* Attraction.swift in Sources */,
+				3EFC7FC31C5C2BA9008DBD54 /* Station.swift in Sources */,
+				3EEA04E51C46B39D0057DA32 /* SWRevealViewController.m in Sources */,
+				3EFC7FC51C5C2FFC008DBD54 /* Airport.swift in Sources */,
+				3EEA04E81C46B7280057DA32 /* HomeViewController.swift in Sources */,
+				3EF7A7401C4D400400012326 /* LoginViewController.swift in Sources */,
+				705EA1381C49B9850043C504 /* Cell.swift in Sources */,
+				709D6FE21C484D4C0095F47B /* CollectionViewController.swift in Sources */,
+				3E74BE481C480865004B78AB /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616551C45458400422CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED6165E1C45458400422CDC /* SartavahackatonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED616601C45458400422CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED616691C45458400422CDC /* SartavahackatonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ED6165B1C45458400422CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED616441C45458400422CDC /* Sartavahackaton */;
+			targetProxy = 3ED6165A1C45458400422CDC /* PBXContainerItemProxy */;
+		};
+		3ED616661C45458400422CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED616441C45458400422CDC /* Sartavahackaton */;
+			targetProxy = 3ED616651C45458400422CDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3ED6164C1C45458400422CDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED6164D1C45458400422CDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ED616511C45458400422CDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED616521C45458400422CDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ED6166B1C45458400422CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ED6166C1C45458400422CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ED6166E1C45458400422CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D587DB3BDC34F8D2E2EF420 /* Pods-Sartavahackaton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sartavahackaton",
+				);
+				INFOPLIST_FILE = Sartavahackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartaba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3ED6166F1C45458400422CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385EAF05A8DBBCD34C691057 /* Pods-Sartavahackaton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sartavahackaton",
+				);
+				INFOPLIST_FILE = Sartavahackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.Sartaba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sartavahackaton/Sartavahackaton-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3ED616711C45458400422CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SartavahackatonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sartavahackaton.app/Sartavahackaton";
+			};
+			name = Debug;
+		};
+		3ED616721C45458400422CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SartavahackatonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sartavahackaton.app/Sartavahackaton";
+			};
+			name = Release;
+		};
+		3ED616741C45458400422CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SartavahackatonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sartavahackaton;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3ED616751C45458400422CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SartavahackatonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.SartavahackatonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sartavahackaton;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ED616401C45458400422CDC /* Build configuration list for PBXProject "Sartaba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED6166B1C45458400422CDC /* Debug */,
+				3ED6166C1C45458400422CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED6166D1C45458400422CDC /* Build configuration list for PBXNativeTarget "Sartavahackaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED6166E1C45458400422CDC /* Debug */,
+				3ED6166F1C45458400422CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED616701C45458400422CDC /* Build configuration list for PBXNativeTarget "SartavahackatonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED616711C45458400422CDC /* Debug */,
+				3ED616721C45458400422CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED616731C45458400422CDC /* Build configuration list for PBXNativeTarget "SartavahackatonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED616741C45458400422CDC /* Debug */,
+				3ED616751C45458400422CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ED6163D1C45458400422CDC /* Project object */;
+}
