@@ -84,4 +84,9 @@ class SearchViewController: UIViewController {
     @IBAction func HotelSchosen(sender: UIButton) {
 
     }
+    func HebrewToEnglish(){
+        outletTrips.setTitle("Organized Trips", forState: UIControlState.Normal)
+        outletHotels.setTitle("Hotels", forState: UIControlState.Normal)
+        outletAtt.setTitle("Attractions", forState: UIControlState.Normal)
+    }
 }

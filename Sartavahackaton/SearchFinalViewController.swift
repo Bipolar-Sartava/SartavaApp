@@ -12,6 +12,10 @@ import MapKit
 class SearchFinalViewController: UIViewController, MKMapViewDelegate {
 
     
+    @IBOutlet weak var SearchOnTheMap: UIButton!
+    @IBOutlet weak var Favorite: UIButton!
+    @IBOutlet weak var NearToMe: UIButton!
+    @IBOutlet weak var SearchAll: UIButton!
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -48,5 +52,12 @@ class SearchFinalViewController: UIViewController, MKMapViewDelegate {
             centerMap(location)
         }
     }
-
+    func HebrewToEnglish(){
+        SearchAll.setTitle("Search All", forState: UIControlState.Normal)
+        Favorite.setTitle("Recomended", forState: UIControlState.Normal)
+        NearToMe.setTitle("Near Me", forState: UIControlState.Normal)
+        SearchOnTheMap.setTitle("Screach On The Map", forState: UIControlState.Normal)
+        
+        
+    }
 }

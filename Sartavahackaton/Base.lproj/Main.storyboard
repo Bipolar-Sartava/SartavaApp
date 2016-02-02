@@ -1723,13 +1723,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Favorite" destination="uSz-82-wpY" id="me4-KW-n0n"/>
+                        <outlet property="NearToMe" destination="DIr-uo-gaq" id="NBz-2A-C4a"/>
+                        <outlet property="ScrachAll" destination="Agh-wp-bC1" id="gLp-Cz-n3m"/>
+                        <outlet property="ScrachOnTheMap" destination="7i8-qW-nI3" id="jwt-7B-AY5"/>
                         <outlet property="map" destination="bWa-Yc-9Js" id="E9u-ZG-PHc"/>
                         <outlet property="searchBar" destination="QvM-xd-TJR" id="ZYm-Le-q1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nod-Me-t6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582" y="1465"/>
+            <point key="canvasLocation" x="1879" y="1445"/>
         </scene>
         <!--Weather In Israel-->
         <scene sceneID="hzN-Vf-qm9">
