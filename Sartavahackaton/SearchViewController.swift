@@ -36,8 +36,6 @@ class SearchViewController: UIViewController {
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
         
-        //Buttons
-12341234
         //Blur
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)

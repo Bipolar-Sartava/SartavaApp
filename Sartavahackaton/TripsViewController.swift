@@ -11,9 +11,8 @@ import UIKit
 class TripsViewController: UIViewController {
 
     @IBOutlet weak var btnMenu: UIBarButtonItem!
-    @IBOutlet weak var SearchTrip: UIButton!
-    @IBOutlet weak var CreateTrip: UIButton!
-    
+
+    var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
         //Menu Btn Stuff
@@ -37,10 +36,14 @@ class TripsViewController: UIViewController {
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
         
-        CreateTrip.titleLabel?.textAlignment = .Right
-        SearchTrip.titleLabel?.textAlignment = .Right
-        
     }
 
+    @IBAction func CreateTripBtn(sender: UIButton) {
+        d.setBool(false, forKey: "SearchTrips")
+    }
+
+    @IBAction func SearchTripBtn(sender: UIButton) {
+        d.setBool(true, forKey: "SearchTrips")
+    }
 
 }

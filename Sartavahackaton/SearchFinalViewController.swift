@@ -10,8 +10,17 @@ import UIKit
 
 class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var SearchView: UIView!
+    @IBOutlet weak var BackPageOut: UIButton!
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     @IBOutlet weak var ShowInfoTBL: UITableView!
+    
+    var names = ["he","yo","he","yo","he","yo"]
+    var fullDesc = ["sda","asda","he","yo","he","yo"]
+    var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    
+    var page = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +33,6 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
             btnMenu.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
         //Side Menu Custoization
         revealViewController().rearViewRevealWidth = 160
         revealViewController().rearViewRevealDisplacement = 60
@@ -39,19 +47,21 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
         
+        //Shared.downloadAllAttractions()
+        
+//        for var i = 0; i < names.count;i++ {
+//            let attraction : Attraction = names[i] as! Attraction
+//            print(attraction.name)
+//        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let ident: String = "identifier"
+        let cell: SearchCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! SearchCell
         
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(ident) as UITableViewCell?
+        cell.nameLbl.text = names[indexPath.row]
+        cell.textlbl.text = fullDesc[indexPath.row]
         
-        if cell ==  nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ident)
-        }
-        
-        cell?.textLabel?.text = "\(indexPath.row)"
-        return cell!
+        return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,8 +69,33 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 65
+        return 200
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        SearchView.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
+        UIView.animateWithDuration(1.0, animations: {self.SearchView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)})
+        
+        lbl.text = names[indexPath.row]
+    }
+    
+    
+    @IBAction func nextPageBtn(sender: UIButton) {
+        d.setObject(page + 1, forKey: "PageNumber")
+        print(page)
+        
+        if d.objectForKey("PageNumber") as! Int > 0 {
+            BackPageOut.hidden = false
+        }
     }
 
-
+    @IBAction func backPageBtn(sender: UIButton) {
+        d.setObject(page - 1, forKey: "PageNumber")
+        print(page)
+        
+        if d.objectForKey("PageNumber") as! Int == 0 {
+            BackPageOut.hidden = true
+        }
+    }
 }

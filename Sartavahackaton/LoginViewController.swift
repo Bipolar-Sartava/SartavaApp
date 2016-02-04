@@ -23,8 +23,6 @@ class LoginViewController: UIViewController {
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
-        Shared.downloadAllAttractions()
-
         
     }
     
