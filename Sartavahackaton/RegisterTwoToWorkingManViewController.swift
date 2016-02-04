@@ -15,9 +15,9 @@ class RegisterTwoToWorkingManViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var secondPassTF: UITextField!
-    @IBOutlet weak var bussinesNameTF: UITextField!
-    @IBOutlet weak var bussinesNumberTF: UITextField!
-    @IBOutlet weak var addressTF: UITextField!
+    @IBOutlet weak var bussinesNameTF: UITextField!//
+    @IBOutlet weak var bussinesNumberTF: UITextField!//
+    @IBOutlet weak var addressTF: UITextField!//
     
     var showPass: Bool = false
     
@@ -120,5 +120,15 @@ class RegisterTwoToWorkingManViewController: UIViewController {
             passTF.secureTextEntry = true
         }
     }
-
+    func HebrewToEnglish(){
+        userNameTF.placeholder = "User Name"
+        passTF.placeholder = "Password"
+        emailTF.placeholder = "Email"
+        secondPassTF.placeholder = "Repeat Password"
+        bussinesNameTF.placeholder = "Bussines Name"
+        bussinesNumberTF.placeholder = "Bussines Number"
+        addressTF.placeholder = "Busssines Adress"
+        
+        
+    }
 }

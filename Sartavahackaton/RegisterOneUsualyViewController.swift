@@ -11,6 +11,8 @@ import Parse
 
 class RegisterOneUsualyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var ChoosingProfile: UIButton!
+    @IBOutlet weak var FirstAndLastName: UILabel!
     @IBOutlet weak var fNameTF: UITextField!
     @IBOutlet weak var lNameTF: UITextField!
     @IBOutlet weak var userProfilePic: UIImageView!
@@ -67,4 +69,14 @@ class RegisterOneUsualyViewController: UIViewController, UIImagePickerController
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    func UserUseEnglish() {
+        fNameTF.placeholder = "First Name"
+        fNameTF.textAlignment = .Left
+        lNameTF.placeholder = "Last Name"
+        lNameTF.textAlignment = .Left
+        ChoosingProfile.setTitle("Choose Your Profile Picture", forState: UIControlState.Normal)
+        FirstAndLastName.text = "Profile Information"
+    }
+    
+    
 }

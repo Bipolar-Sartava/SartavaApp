@@ -55,4 +55,35 @@ class SearchViewController: UIViewController {
         blurEffectView.alpha = 0.9
         blurEffectView.userInteractionEnabled = false
     }
+<<<<<<< HEAD
+=======
+    
+    @IBAction func AttChosen(sender: UIButton) {
+        AttCatView.hidden = false
+        AttCatView.layer.zPosition = 3
+        bgImg.layer.zPosition = 1
+        outletAtt.hidden = true
+        outletHotels.hidden = true
+        outletTrips.hidden = true
+        searchBar.hidden = true
+        view1.hidden = true
+        view2.hidden = true
+        view3.hidden = true
+        
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    @IBAction func TripsChosen(sender: UIButton) {
+
+    }
+    
+    @IBAction func HotelSchosen(sender: UIButton) {
+
+    }
+    func HebrewToEnglish(){
+        outletTrips.setTitle("Organized Trips", forState: UIControlState.Normal)
+        outletHotels.setTitle("Hotels", forState: UIControlState.Normal)
+        outletAtt.setTitle("Attractions", forState: UIControlState.Normal)
+    }
+>>>>>>> upstream/master
 }

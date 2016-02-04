@@ -16,9 +16,18 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     @IBOutlet weak var ShowInfoTBL: UITableView!
     
+<<<<<<< HEAD
     var names = ["he","yo","he","yo","he","yo"]
     var fullDesc = ["sda","asda","he","yo","he","yo"]
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+=======
+    @IBOutlet weak var SearchOnTheMap: UIButton!
+    @IBOutlet weak var Favorite: UIButton!
+    @IBOutlet weak var NearToMe: UIButton!
+    @IBOutlet weak var SearchAll: UIButton!
+    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
+>>>>>>> upstream/master
     
     var page = 0
     
@@ -98,4 +107,15 @@ class SearchFinalViewController: UIViewController, UITableViewDelegate, UITableV
             BackPageOut.hidden = true
         }
     }
+<<<<<<< HEAD
+=======
+    func HebrewToEnglish(){
+        SearchAll.setTitle("Search All", forState: UIControlState.Normal)
+        Favorite.setTitle("Recomended", forState: UIControlState.Normal)
+        NearToMe.setTitle("Near Me", forState: UIControlState.Normal)
+        SearchOnTheMap.setTitle("Screach On The Map", forState: UIControlState.Normal)
+        
+        
+    }
+>>>>>>> upstream/master
 }

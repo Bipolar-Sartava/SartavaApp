@@ -9,7 +9,9 @@
 import UIKit
 
 class RegisterOneToWorkingManViewController: UIViewController {
+    @IBOutlet weak var ChoosingProfile: UIButton!
 
+    @IBOutlet weak var FirstAndLastName: UILabel!
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var fNameTF: UITextField!
     @IBOutlet weak var lNameTF: UITextField!
@@ -54,5 +56,13 @@ class RegisterOneToWorkingManViewController: UIViewController {
     @IBAction func btnChangeProfliePic(sender: UIButton) {
         
     }
-
+    func UserUseEnglish() {
+        fNameTF.placeholder = "First Name"
+        fNameTF.textAlignment = .Left
+        lNameTF.placeholder = "Last Name"
+        lNameTF.textAlignment = .Left
+        ChoosingProfile.setTitle("Choose Your Profile Picture", forState: UIControlState.Normal)
+        FirstAndLastName.text = "Profile Information"
+        
+    }
 }
