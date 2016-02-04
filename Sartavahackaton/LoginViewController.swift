@@ -23,26 +23,31 @@ class LoginViewController: UIViewController {
     var d: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Shared.downloadAllAttractions()
     }
     
     override func viewDidAppear(animated: Bool) {
         userNameTF.text = d.objectForKey("userNameNSUSER") as? String
         //Check if its the first time
-        if (d.objectForKey("AppFirstLanch1")?.boolValue == true) {
+        if (d.objectForKey("HasLaunchedOnce5")?.boolValue == true) {
             // app already launched
         }
             
         else {
             // This is the first launch ever
-            d.setBool(true, forKey: "AppFirstLanch1")
-            let lang = NSLocale.currentLocale().objectForKey(NSLocaleLanguageCode)! as! String
+            d.setBool(true, forKey: "HasLaunchedOnce5")
+            let alert = UIAlertController(title: "Welcom", message: "What is your primary Language?", preferredStyle: UIAlertControllerStyle.Alert)
             
-            if lang  == "he" {
-                d.setBool(false, forKey: "UserPrefEnglish")
-            } else {
-                d.setBool(true, forKey: "UserPrefEnglish")
-            }
+            alert.addAction(UIAlertAction(title: "עברית", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+                self.d.setBool(false, forKey: "UserPrefEnglish")
+            }))
+            
+            alert.addAction(UIAlertAction(title: "English", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+                self.d.setBool(true, forKey: "UserPrefEnglish")
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            d.synchronize()
         }
         
         if d.boolForKey("UserPrefEnglish") == true {

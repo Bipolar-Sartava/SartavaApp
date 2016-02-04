@@ -10,6 +10,7 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var AttCatView: UIView!
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view1: UIView!
@@ -36,6 +37,11 @@ class SearchViewController: UIViewController {
         navBar?.barTintColor = UIColor(red: 104/255, green: 174/255, blue: 235/225, alpha: 1.0)
         navBar?.tintColor = UIColor.whiteColor()
         
+        //Buttons
+        outletAtt.titleLabel?.textAlignment = .Right
+        outletHotels.titleLabel?.textAlignment = .Right
+        outletTrips.titleLabel?.textAlignment = .Right
+        
         //Blur
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -55,8 +61,6 @@ class SearchViewController: UIViewController {
         blurEffectView.alpha = 0.9
         blurEffectView.userInteractionEnabled = false
     }
-<<<<<<< HEAD
-=======
     
     @IBAction func AttChosen(sender: UIButton) {
         AttCatView.hidden = false
@@ -85,5 +89,4 @@ class SearchViewController: UIViewController {
         outletHotels.setTitle("Hotels", forState: UIControlState.Normal)
         outletAtt.setTitle("Attractions", forState: UIControlState.Normal)
     }
->>>>>>> upstream/master
 }

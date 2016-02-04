@@ -27,6 +27,7 @@ class Attractions: NSObject {
                 currentAttraction.specificationAttributeOptionName.addObject(newAttraction.specificationAttributeOptionName)
                 self.attractions.replaceObjectAtIndex(i, withObject: currentAttraction)
                 found = true
+                print(currentAttraction.productId)
                 break
             }
         }
