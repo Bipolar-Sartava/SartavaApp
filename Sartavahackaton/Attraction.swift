@@ -19,6 +19,7 @@ class Attraction: NSObject {
     var shortdescription : String
     var specificationAttributeName : NSMutableArray
     var specificationAttributeOptionName : NSMutableArray
+    var sharedNames = [String]()
     
      init(nattributeTypeId : String, ncustomValue : String , ndisplayOrder : Int , nfullDescription : String, nname : String, nproductId : String, nshortdescription : String, nspecificationAttributeName : String, nspecificationAttributeOptionName : String){
 
