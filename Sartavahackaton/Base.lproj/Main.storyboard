@@ -173,6 +173,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9e-ov-FR3">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="חזור">
+                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="skg-uI-cPe" kind="push" id="Iws-YH-yRY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -236,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abu-JG-Nr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-183"/>
+            <point key="canvasLocation" x="1292" y="-189"/>
         </scene>
         <!--Register One To Working Man View Controller-->
         <scene sceneID="sqR-34-Agq">
@@ -325,6 +334,15 @@
                                     <action selector="btnChangeProfliePic:" destination="skg-uI-cPe" eventType="touchUpInside" id="R40-iO-KTc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-aD-B1B">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="חזור">
+                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xOD-Vo-yVW" kind="push" id="O1z-fE-q7h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -352,6 +370,7 @@
                             <constraint firstItem="A8o-xS-D26" firstAttribute="centerX" secondItem="4EE-fh-kPv" secondAttribute="centerX" id="snt-90-bz6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Mlu-JM-FnA"/>
                     <connections>
                         <outlet property="ChoosingProfile" destination="3hx-lc-Bv8" id="D1t-F5-c4P"/>
                         <outlet property="FirstAndLastName" destination="PNb-Xk-i6k" id="i1J-7A-MyX"/>
@@ -362,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zb-vm-eYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-904"/>
+            <point key="canvasLocation" x="1315" y="-868"/>
         </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -656,6 +675,15 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="yiP-z0-saB">
                                 <rect key="frame" x="20" y="40" width="560" height="2"/>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmm-cY-rz9">
+                                <rect key="frame" x="0.0" y="1" width="46" height="30"/>
+                                <state key="normal" title="חזור">
+                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gvu-29-vwM" kind="push" id="huE-FL-wco"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -712,7 +740,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZW-kg-gOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="-182"/>
+            <point key="canvasLocation" x="2015" y="-195"/>
         </scene>
         <!--RegisterOne-->
         <scene sceneID="p0o-sF-WL9">
@@ -806,6 +834,15 @@
                                     <constraint firstAttribute="height" constant="128" id="sxZ-sm-w2v"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-EI-CCe">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="חזור">
+                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xOD-Vo-yVW" kind="push" id="VjS-cJ-EtB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -843,6 +880,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="5Zc-ld-VXS"/>
                     <connections>
                         <outlet property="ChoosingPicture" destination="hcw-JP-Xas" id="z0G-7e-48G"/>
                         <outlet property="FirstAndLastName" destination="80R-vZ-Tob" id="8WT-vi-EVi"/>
@@ -853,7 +891,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weL-bV-xy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="-904"/>
+            <point key="canvasLocation" x="2015" y="-868"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="qn2-o6-LED">
@@ -1660,6 +1698,15 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="TripsChosen:" destination="GhJ-jk-4sB" eventType="touchUpInside" id="1mm-Ro-L0Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-Xu-o3d">
+                                                <rect key="frame" x="8" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="חזור">
+                                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="GhJ-jk-4sB" kind="push" id="4FA-xM-gmA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2638,6 +2685,15 @@
                                     <action selector="btnContinue:" destination="xOD-Vo-yVW" eventType="touchUpInside" id="Szb-gw-IvC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzG-LK-fqr">
+                                <rect key="frame" x="0.0" y="1" width="46" height="30"/>
+                                <state key="normal" title="חזור">
+                                    <color key="titleColor" red="0.097574300660000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="dpg-Oh-JJc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2753,7 +2809,10 @@
         <image name="jeep" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6uT-fW-eQr"/>
         <segue reference="JAt-AC-Du8"/>
+        <segue reference="6uT-fW-eQr"/>
+        <segue reference="dpg-Oh-JJc"/>
+        <segue reference="VjS-cJ-EtB"/>
+        <segue reference="4FA-xM-gmA"/>
     </inferredMetricsTieBreakers>
 </document>
