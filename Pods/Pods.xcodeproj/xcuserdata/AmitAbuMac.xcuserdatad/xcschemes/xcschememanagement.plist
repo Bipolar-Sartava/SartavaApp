@@ -4,30 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Sartaba.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
-		<key>Sartavahackaton.xcscheme</key>
+		<key>Pods-Sartavahackaton.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3ED616441C45458400422CDC</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ED616581C45458400422CDC</key>
+		<key>A4500175B332B9B635D36203037A4B6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ED616631C45458400422CDC</key>
+		<key>F65797303425AB2D3B62AFF614281EBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
