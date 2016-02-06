@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1148,19 +1148,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3t-nN-AiL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-rn-Vuh">
                                 <rect key="frame" x="0.0" y="428" width="600" height="172"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtn-yz-hYu">
-                                        <rect key="frame" x="412" y="21" width="180" height="130"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-GE-wKR">
-                                        <rect key="frame" x="8" y="21" width="180" height="130"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-Eb-h6h">
-                                        <rect key="frame" x="210" y="21" width="180" height="130"/>
-                                    </imageView>
-                                </subviews>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Users Pictures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fy-QJ-6y5">
                                 <rect key="frame" x="214" y="399" width="173" height="21"/>
@@ -1219,11 +1208,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="UserImage1" destination="Wtn-yz-hYu" id="doC-wd-a9P"/>
-                        <outlet property="UserImage2" destination="dRc-GE-wKR" id="xbE-HK-WX4"/>
-                        <outlet property="UserImage3" destination="0dH-Eb-h6h" id="mi4-N5-dLt"/>
                         <outlet property="img" destination="8Mt-OJ-OJj" id="LEq-6O-HlK"/>
-                        <outlet property="scrollview" destination="l3t-nN-AiL" id="9ap-ab-aT3"/>
+                        <outlet property="scrollview" destination="bf9-rn-Vuh" id="6A5-MK-ys7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iop-RO-U2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1260,7 +1246,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="LAp-n3-1T7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tree3" translatesAutoresizingMaskIntoConstraints="NO" id="LAp-n3-1T7">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <searchBar contentMode="redraw" misplaced="YES" placeholder="Search with text" translatesAutoresizingMaskIntoConstraints="NO" id="3Mi-pT-MM9">
@@ -1789,7 +1775,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nod-Me-t6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="1445"/>
+            <point key="canvasLocation" x="1875" y="1465"/>
         </scene>
         <!--Weather In Israel-->
         <scene sceneID="hzN-Vf-qm9">
@@ -1802,6 +1788,11 @@
                     <view key="view" contentMode="scaleToFill" id="4Km-Es-5ll">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fck-IH-KBd">
+                                <rect key="frame" x="0.0" y="430" width="600" height="170"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XEp-jy-Auv">
@@ -1826,6 +1817,16 @@
                     <view key="view" contentMode="scaleToFill" id="Syw-xJ-lSb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fMm-oc-dJx">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="C14-HU-vaC" id="bMS-zT-f6S"/>
+                                    <outlet property="delegate" destination="C14-HU-vaC" id="cdG-Dk-ca5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zdw-Lb-Hfa">
@@ -1833,6 +1834,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnMenu" destination="ocu-xQ-CGH" id="A8X-aG-Slf"/>
+                        <outlet property="tblview" destination="fMm-oc-dJx" id="vQa-Cx-F4t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JiL-5i-nah" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2809,10 +2811,10 @@
         <image name="jeep" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JAt-AC-Du8"/>
         <segue reference="6uT-fW-eQr"/>
-        <segue reference="dpg-Oh-JJc"/>
+        <segue reference="xj6-n5-Fsb"/>
         <segue reference="VjS-cJ-EtB"/>
+        <segue reference="dpg-Oh-JJc"/>
         <segue reference="4FA-xM-gmA"/>
     </inferredMetricsTieBreakers>
 </document>

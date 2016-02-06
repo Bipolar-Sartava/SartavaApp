@@ -7,9 +7,11 @@
 //
 
 import UIKit
-class CollectionViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class CollectionViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIScrollViewDelegate {
     var imagesent : UIImageView!
-    var userimages : [UIImageView]!
+    var userimages : [UIImageView] = []
+    var counter : Int = 0
+    var lastx  : CGFloat = 0
     //scroll view
     @IBOutlet weak var scrollview: UIScrollView!
     
@@ -25,18 +27,7 @@ class CollectionViewController: UIViewController, UINavigationControllerDelegate
         
         self.navigationItem.rightBarButtonItem = camera
         
-        let fave : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Bookmarks
-            , target: self, action: "ActivateFave")
-        
-        self.navigationItem.leftBarButtonItem = fave
-        
     }
-    //Activate Favorites
-    func ActivateFave()
-    {
-    
-    }
-    
     //Activate the camera
     
     func ActivateCamera()
@@ -72,12 +63,11 @@ class CollectionViewController: UIViewController, UINavigationControllerDelegate
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        userimages = [UserImage1,UserImage2,UserImage3]
-        for(var i=0;i<userimages.count;i++)
-        {
-            userimages[i].image = info[UIImagePickerControllerOriginalImage] as! UIImage?
-        }
-
+        let iv : UIImageView =  UIImageView(frame: CGRectMake(lastx + 10, 5, 150, 150))
+        lastx = lastx + 180
+        scrollview.contentSize.width = lastx + 230
+        iv.image = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        scrollview.addSubview(iv)
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
@@ -87,15 +77,11 @@ class CollectionViewController: UIViewController, UINavigationControllerDelegate
         
     }
     @IBOutlet weak var img: UIImageView!
-    @IBOutlet weak var UserImage1: UIImageView!
-    @IBOutlet weak var UserImage2: UIImageView!
-    @IBOutlet weak var UserImage3: UIImageView!
     var image = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
     self.addItem()
     self.img.image = self.image
-    scrollview.contentSize.width = 1000
     }
 
     override func didReceiveMemoryWarning() {
